@@ -21,9 +21,10 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="90"/>
-        <CursorPos X="50" Y="124"/>
+        <TopLine Value="51"/>
+        <CursorPos X="110" Y="72"/>
         <UsageCount Value="51"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -56,9 +57,8 @@
       </Unit6>
       <Unit7>
         <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="37"/>
+        <TopLine Value="38"/>
         <CursorPos X="66" Y="57"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
