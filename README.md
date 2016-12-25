@@ -63,6 +63,27 @@ data disematkan di dalam body post, dengan format berikut
 format ini mengikuti pola message dari Telegram.
 
 
+***Format JSON Output***
+
+```
+{
+	"code": 0,
+	"request": {
+		"text": ""
+	},
+	"response": {
+		"intents": {
+			"action": "",
+			"name": "",
+			"parameters": {}
+		},
+		"text": []
+	}
+}
+```
+
+
+
 **Pengujian**
 
 Pengujian dari command-line bisa dilakukan dengan syntax demikian:
