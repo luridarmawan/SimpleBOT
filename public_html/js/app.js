@@ -1,8 +1,20 @@
 
-url = '/ai/?_DEBUG=1&t=';
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+}
 
+//var url = '/ai/?_DEBUG=1&t=';
+var url = '/ai/?a=1';
 
 jQuery(document).ready(function() {
+  
+  //s = jQuery.urlParam('_DEBUG');
+  var debug = new RegExp('[\?&]' + '_DEBUG' + '=([^&#]*)').exec(window.location.href);
+  if (debug != null){
+    url = url + '&_DEBUG=1';
+  }
+  url = url + '&t=';
 
   function InsertChatBox( Sender, Message){
     Message = Message.replace(/\n/g, "<br>");
@@ -52,6 +64,13 @@ jQuery(document).ready(function() {
     var timestamp = new Date().getTime();
     var posting = jQuery.post(url+timestamp, json);
     
+    posting.error( function(XMLHttpRequest, textStatus, errorThrown){
+      s = 'status:' + XMLHttpRequest.status + ', status text: ' + XMLHttpRequest.statusText;
+      $( '#log').text( s);
+      $( 'input#text').attr( 'disabled', false);
+      $( '#btnChat').attr( 'disabled', false);
+    })
+
     posting.done(function(data) {
       response_text = data.response.text;
       if ( Array.isArray( response_text)){
@@ -62,6 +81,8 @@ jQuery(document).ready(function() {
       }else{
         InsertChatBox( 'Dia', response_text);
       }
+      $( 'input#text').attr( 'disabled', false);
+      $( '#btnChat').attr( 'disabled', false);
     });
 
   }
@@ -77,23 +98,18 @@ jQuery(document).ready(function() {
     if ( Message == '')
       Exit;
 
+    $( 'input#text').attr( 'disabled', true);
+    $( '#btnChat').attr( 'disabled', true);
     SendMessage( '', Message);
 
-    //$( 'input#text').val('');
+    $( 'input#text').val('');
     $( 'input#text').focus();
   });
-
-
-
-
-
 
 
   $( '#panel-body').height( $( document ).height()-150);
   $( '#LogContainer').height( $( document ).height()-50);
   $( '#log').css( 'height', '100%');
-  
-
 
   $( 'input#text').focus();
 }); 
