@@ -78,6 +78,7 @@ begin
   if Text = '' then
     Text := _POST['text'];
 
+
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.ChatID := ChatID;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
@@ -97,45 +98,24 @@ end;
 
 function TMainModule.defineHandler(const IntentName: string; Params: TStrings): string;
 var
-  i: integer;
   keyName, keyValue: string;
 begin
-  i := 2;
-  if SimpleBOT.Debug then
-    i := 3;
 
-  if Params.Count < i then //
+  // global define
+  keyName := Params.Values['Key'];
+  if keyName <> '' then
   begin
-    keyName := Params.Names[0];
-    keyValue := Params.ValueFromIndex[0];
-    SimpleBOT.SetSession(_AI_SESSION_USER + keyName, keyValue);
-    Result := SimpleBOT.GetResponse(IntentName + 'Response', '', '');
-    if preg_match('%(' + keyName + ')%', Result) then
-    begin
-      Result := preg_replace('%(' + keyName + ')%', keyValue, Result, True);
-    end;
-
-    if keyName = 'Email' then
-    begin
-      if not isEmail( keyValue) then
-        Result := SimpleBOT.GetResponse( 'EmailTidakValid');
-    end;
-
-    Result := SimpleBOT.StringReplacement( Result);
-  end // count < 1
-  else
-  begin // global define: blablabla adalah bla bla bla bla
     keyName := Params.Values['Key'];
     keyValue := Params.Values['Value'];
     Result := keyName + ' = ' + keyValue;
-
-    Result := SimpleBOT.GetResponse( 'HalBaru');
-    Result := StringReplace( Result, '%word%', UpperCase( keyName), [rfReplaceAll]);
+    Result := SimpleBOT.GetResponse('HalBaru');
+    Result := StringReplace(Result, '%word%', UpperCase(keyName), [rfReplaceAll]);
   end;
+
+  Result := SimpleBOT.StringReplacement(Result);
 
   // Simpan ke database
   //   keyName & keyValue
-  //
 
 end;
 
@@ -147,7 +127,7 @@ begin
   if s <> '' then
   begin
     //Result := 'Your custom message: ..... ';
-    Result := SimpleBOT.GetResponse( 'none');
+    Result := SimpleBOT.GetResponse('none');
   end;
 
   if isWord(s) then
@@ -159,9 +139,10 @@ begin
   end;
 
 
-  // simpan message, untuk dipelajari oleh AI
+  // simpan message ke DB, untuk dipelajari oleh AI
   //
   //
+
 
 end;
 
