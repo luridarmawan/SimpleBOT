@@ -114,7 +114,13 @@ begin
 
   Result := SimpleBOT.StringReplacement(Result);
 
-  // Simpan ke database
+  // Example Set & Get temporer user data
+  {
+  SimpleBOT.UserData[ 'name'] := 'Luri Darmawan';
+  varstring :=   SimpleBOT.UserData[ 'name'];
+  }
+
+  // Save to database
   //   keyName & keyValue
 
 end;

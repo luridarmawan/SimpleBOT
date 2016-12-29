@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
     html = html + '<span class="glyphicon glyphicon-time"></span>... ago</small>';
     html = html + '</div>';
     html = html + '<p>';
-    html = html + Message;
+    html = html + Message.trim();
     html = html + '</p>';
     html = html + '</div>';
     html = html + '';
@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
     html = html + '<strong class="pull-right primary-font">Me</strong>';
     html = html + '</div>';
     html = html + '<p class="pull-right">';
-    html = html + Message;
+    html = html + Message.trim();
     html = html + '</p>';
     html = html + '</div>';
     html = html + '';
