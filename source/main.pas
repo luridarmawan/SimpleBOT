@@ -6,7 +6,7 @@ interface
 
 uses
   simplebot_controller, logutil_lib,
-  Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, html_lib, database_lib;
+  Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
 type
 

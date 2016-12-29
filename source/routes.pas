@@ -9,11 +9,10 @@ uses
 
 implementation
 
-uses info_controller, main, simplebot_controller;
+uses info_controller, main;
 
 initialization
   Route.Add( 'main', TMainModule);
-  //Route.Add( 'coba', TSimpleBotModule);
   Route.Add( 'info', TInfoModule);
 
 end.
