@@ -5,7 +5,7 @@ unit main;
 interface
 
 uses
-  simplebot_controller,
+  simplebot_controller, logutil_lib,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, html_lib, database_lib;
 
 type
@@ -140,9 +140,10 @@ begin
 
 
   // simpan message ke DB, untuk dipelajari oleh AI
-  //
-  //
 
+
+
+  LogUtil.Add(Message, _AL_LOG_LEARN);
 
 end;
 
