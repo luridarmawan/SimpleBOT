@@ -60,7 +60,7 @@ procedure TMainModule.Post;
 var
   json: TJSONUtil;
   text_response: string;
-  Text, ChatID, MessageID: string;
+  Text, chatID, messageID, fullName, userName: string;
 begin
 
   // telegram style
@@ -70,8 +70,10 @@ begin
   Text := json['message/text'];
   if Text = 'False' then
     Text := '';
-  MessageID := json['message/message_id'];
-  ChatID := json['message/chat/id'];
+  messageID := json['message/message_id'];
+  chatID := json['message/chat/id'];
+  userName := json['message/chat/username'];
+  fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
   json.Free;
 
   // jika tidak ada di body, ambil dari parameter POST
@@ -80,7 +82,12 @@ begin
 
 
   SimpleBOT := TSimpleBotModule.Create;
-  SimpleBOT.ChatID := ChatID;
+  SimpleBOT.chatID := chatID;
+  if userName <> '' then
+  begin
+    SimpleBOT.UserData['Name'] := userName;
+    SimpleBOT.UserData['FullName'] := fullName;
+  end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
   text_response := SimpleBOT.Exec(Text);
@@ -88,8 +95,8 @@ begin
 
   // Send To Telegram
   {
-  if s2i(ChatID) <> 0 then
-    TelegramSend(ChatID, MessageID, SimpleAI.ResponseText);
+  if s2i(chatID) <> 0 then
+    TelegramSend(chatID, messageID, SimpleAI.ResponseText);
   }
 
   //---
