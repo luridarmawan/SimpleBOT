@@ -3,12 +3,12 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="33">
+    <Units Count="35">
       <Unit0>
         <Filename Value="simplebot.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="87" Y="13"/>
+        <CursorPos X="124" Y="13"/>
         <UsageCount Value="67"/>
       </Unit0>
       <Unit1>
@@ -22,8 +22,8 @@
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="79"/>
-        <CursorPos X="48" Y="103"/>
+        <TopLine Value="49"/>
+        <CursorPos X="34" Y="18"/>
         <UsageCount Value="67"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -35,9 +35,7 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="401"/>
-        <CursorPos X="53" Y="436"/>
+        <CursorPos X="35" Y="2"/>
         <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit4>
@@ -58,8 +56,7 @@
       <Unit7>
         <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="95"/>
-        <CursorPos X="14" Y="55"/>
+        <CursorPos Y="8"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit7>
@@ -102,23 +99,22 @@
       <Unit13>
         <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="29"/>
-        <CursorPos Y="52"/>
+        <CursorPos Y="8"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="169"/>
-        <CursorPos Y="208"/>
+        <CursorPos Y="8"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <CursorPos X="36" Y="181"/>
+        <CursorPos X="122" Y="21"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit15>
@@ -132,20 +128,22 @@
       <Unit17>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/http_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="58"/>
-        <CursorPos Y="555"/>
+        <TopLine Value="301"/>
+        <CursorPos Y="307"/>
         <UsageCount Value="10"/>
       </Unit17>
       <Unit18>
         <Filename Value="../../SimpleAI/src/simpleairedis_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <CursorPos Y="73"/>
+        <TopLine Value="4"/>
+        <CursorPos X="5" Y="25"/>
         <UsageCount Value="11"/>
       </Unit18>
       <Unit19>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/redis_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="3"/>
+        <TopLine Value="25"/>
+        <CursorPos X="3" Y="46"/>
         <UsageCount Value="10"/>
       </Unit19>
       <Unit20>
@@ -233,125 +231,73 @@
       <Unit32>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/json_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="226"/>
-        <CursorPos X="15" Y="243"/>
+        <TopLine Value="17"/>
+        <CursorPos X="59" Y="40"/>
         <UsageCount Value="12"/>
       </Unit32>
+      <Unit33>
+        <Filename Value="/usr/local/share/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11"/>
+        <CursorPos X="3" Y="33"/>
+        <UsageCount Value="10"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/redis_lib.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="3" Y="67"/>
+        <UsageCount Value="10"/>
+      </Unit34>
     </Units>
     <OtherDefines Count="1">
       <Define0 Value="UseCThreads"/>
     </OtherDefines>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="114" Column="47" TopLine="93"/>
+        <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
+        <Caret Line="47" TopLine="29"/>
       </Position1>
       <Position2>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="97" Column="41" TopLine="73"/>
+        <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
+        <Caret Line="8" Column="3"/>
       </Position2>
       <Position3>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="592" TopLine="571"/>
+        <Caret Line="171" TopLine="162"/>
       </Position3>
       <Position4>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="594" Column="50" TopLine="571"/>
+        <Caret Line="654" TopLine="641"/>
       </Position4>
       <Position5>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="551" TopLine="531"/>
+        <Caret Line="646" Column="45" TopLine="641"/>
       </Position5>
       <Position6>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="591" TopLine="571"/>
+        <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
+        <Caret Line="9" Column="44"/>
       </Position6>
       <Position7>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="551" Column="3" TopLine="530"/>
+        <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
+        <Caret Line="130" Column="56" TopLine="111"/>
       </Position7>
       <Position8>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="419" Column="19" TopLine="398"/>
+        <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
+        <Caret Line="25" Column="47" TopLine="5"/>
       </Position8>
       <Position9>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="417" TopLine="396"/>
+        <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
+        <Caret Line="208" TopLine="169"/>
       </Position9>
       <Position10>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="416" TopLine="395"/>
+        <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
+        <Caret Line="181" Column="36"/>
       </Position10>
       <Position11>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="97" Column="36" TopLine="77"/>
+        <Caret Line="26" Column="83"/>
       </Position11>
-      <Position12>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="382" TopLine="363"/>
-      </Position12>
-      <Position13>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="92" TopLine="73"/>
-      </Position13>
-      <Position14>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="96" Column="36" TopLine="76"/>
-      </Position14>
-      <Position15>
-        <Filename Value="main.pas"/>
-        <Caret Line="125" TopLine="104"/>
-      </Position15>
-      <Position16>
-        <Filename Value="main.pas"/>
-        <Caret Line="18" Column="34"/>
-      </Position16>
-      <Position17>
-        <Filename Value="main.pas"/>
-        <Caret Line="63" Column="17" TopLine="42"/>
-      </Position17>
-      <Position18>
-        <Filename Value="main.pas"/>
-        <Caret Line="63" Column="15" TopLine="55"/>
-      </Position18>
-      <Position19>
-        <Filename Value="main.pas"/>
-      </Position19>
-      <Position20>
-        <Filename Value="main.pas"/>
-        <Caret Line="63" Column="26" TopLine="57"/>
-      </Position20>
-      <Position21>
-        <Filename Value="main.pas"/>
-      </Position21>
-      <Position22>
-        <Filename Value="main.pas"/>
-        <Caret Line="76" Column="78" TopLine="57"/>
-      </Position22>
-      <Position23>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="91" Column="52" TopLine="69"/>
-      </Position23>
-      <Position24>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="673" Column="73" TopLine="638"/>
-      </Position24>
-      <Position25>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="88" Column="52" TopLine="88"/>
-      </Position25>
-      <Position26>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="436" Column="23" TopLine="406"/>
-      </Position26>
-      <Position27>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="301" Column="25" TopLine="280"/>
-      </Position27>
-      <Position28>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="306" Column="22" TopLine="280"/>
-      </Position28>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
