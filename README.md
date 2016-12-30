@@ -2,6 +2,8 @@
 
 # SimpleBOT
 
+## What is it?
+
 SimpleBOT merupakan salah satu contoh penggunaan SimpleAI yang dipergunakan untuk membuat BOT.
 Memiliki fitur menjawab otomatis, dan belajar suatu definisi kata sederhana.
 Kecerdasan Bot ini tergantung dari data entity dan intent yang Anda miliki, serta logic handler yang Anda buat.
@@ -10,11 +12,24 @@ Contoh penggunaan bot sederhana dengan SimpleBOT ini bisa anda coba dari situs [
 
 Aplikasi SimpleBOT ini sudah kompatibel dengan Telegram API, sehingga anda bisa menggunakannya sebagai Telegram Bot.
 
+## Why use it?
 
-**Dependency**
+**Ringan Tanpa Beban**
 
-- FastPlaz_runtime
-- SimpleBOT package
+SimpleBOT dibuat dengan sederhana, simple dan ringan. SimpleBOT adalah _binary application_ sehingga diharapkan akan lebih cepat dan ringan. 
+
+Kompatibel dengan shared hosting umumnya.
+
+Untuk penggunaan custom, cukup dibutuhkan instalasi Apache Web Server regular.
+
+
+## How to use it
+
+
+### Requirements
+
+- [FastPlaz_runtime](http://www.fastplaz.com/)
+- [SimpleBOT package](https://github.com/luridarmawan/SimpleAI/)
 
 ### Instalasi
 
@@ -22,7 +37,7 @@ Gunakan Lazarus, buka file "simplebot.lpi" dan *compile* file tersebut.
 
 Akan terbentuk file binary di 'public_html/ai/simplebot.bin'
 
-**SimpleBOT USAGE**
+### SimpleBOT USAGE
 
 ```
   SimpleBOT := TSimpleBotModule.Create;
@@ -50,7 +65,8 @@ begin
 end;
 ```
 
-**Input**
+
+### Input
 
 method: POST
 
@@ -86,7 +102,7 @@ format ini mengikuti pola message dari Telegram.
 
 **Pengujian**
 
-Pengujian dari command-line bisa dilakukan dengan syntax demikian:
+Pengujian dari command-line bisa dilakukan dengan syntax berikut:
 
 ```
 curl "http://local-bot.fastplaz.com/ai/" -X POST -d '{"message":{"message_id":0,"chat":{"id":0},"text":"Hi"}}'
