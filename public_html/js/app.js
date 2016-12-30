@@ -17,6 +17,7 @@ jQuery(document).ready(function() {
   url = url + '&t=';
 
   function InsertChatBox( Sender, Message){
+    Message = Message.trim();
     Message = Message.replace(/\n/g, "<br>");
     html = '<li class="left clearfix">';
     html = html + '<span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=BOT" class="img-circle" /></span>';
@@ -26,7 +27,7 @@ jQuery(document).ready(function() {
     html = html + '<span class="glyphicon glyphicon-time"></span>... ago</small>';
     html = html + '</div>';
     html = html + '<p>';
-    html = html + Message.trim();
+    html = html + Message;
     html = html + '</p>';
     html = html + '</div>';
     html = html + '';
@@ -37,6 +38,7 @@ jQuery(document).ready(function() {
   }
 
   function InsertMyChatBox( Message){
+    Message = Message.trim();
     html = '<li class="right clearfix"><span class="chat-img pull-right">';
     html = html + '<img src="http://placehold.it/50/FA6F57/fff&text=ME" class="img-circle" />';
     html = html + '</span>';
@@ -46,7 +48,7 @@ jQuery(document).ready(function() {
     html = html + '<strong class="pull-right primary-font">Me</strong>';
     html = html + '</div>';
     html = html + '<p class="pull-right">';
-    html = html + Message.trim();
+    html = html + Message;
     html = html + '</p>';
     html = html + '</div>';
     html = html + '';
