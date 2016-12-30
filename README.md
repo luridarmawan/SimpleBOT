@@ -37,6 +37,29 @@ Gunakan Lazarus, buka file "simplebot.lpi" dan *compile* file tersebut.
 
 Akan terbentuk file binary di 'public_html/ai/simplebot.bin'
 
+**Compile dari Command-Line**
+
+```
+SimpleBOT$ cd source/
+source$ ./clean.sh 
+source$ ./build.sh
+.
+.
+simplebot.lpr(13,124)
+Assembling (pipe) lib/simplebot.s
+Compiling resource lib/simplebot.or
+Linking ../public_html/ai/simplebot.bin
+.
+.
+source$ _
+
+```
+
+**Custom Build**
+
+untuk konfigurasi custom, misal untuk perubahan path tempat library berada, bisa dilakukan dengan melakukan modifikasi di file **extra.cfg**.
+
+
 ### SimpleBOT USAGE
 
 ```
@@ -112,3 +135,8 @@ atau bisa dengan menggunakan aplikasi RESTClient lainnya.
 
 
 ![Format](img/format_01.png "Format")
+
+
+### Web Folder Structure
+
+![Folder Structure](img/folder-structure.png "Folder Structure");
