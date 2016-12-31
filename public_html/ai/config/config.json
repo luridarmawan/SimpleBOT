@@ -22,7 +22,7 @@
       "datasource": "file",
       "debug": false,
       "basedir": "files/",
-      "entities": "entities-pulsa.txt,entities.txt",
+      "entities": "entities-property.txt,entities.txt",
       "intents": "intents-property.txt,intents.txt",
       "response": "response.txt,questions.txt"
     }

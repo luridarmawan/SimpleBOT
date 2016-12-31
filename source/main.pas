@@ -89,7 +89,7 @@ begin
     SimpleBOT.UserData['FullName'] := fullName;
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
-  SimpleBOT.Handler['define'] := @defineHandler;
+  SimpleBOT.Handler['property_search'] := @defineHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
@@ -145,9 +145,19 @@ begin
 
   if isWord(s) then
   begin
-    s := StringReplace(SimpleBOT.GetResponse('InginTahu', ''),
-      '%word%', s, [rfReplaceAll]);
-    Result := s;
+    if isEmail(s) then
+    begin
+
+      // do something
+
+      Result := 'data Email telah kami simpan.';
+    end
+    else
+    begin
+      s := StringReplace(SimpleBOT.GetResponse('InginTahu', ''),
+        '%word%', s, [rfReplaceAll]);
+      Result := s;
+    end;
     Exit;
   end;
 

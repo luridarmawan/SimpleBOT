@@ -8,8 +8,9 @@ binatang=asu|anjing|babi
 lainnya=tai|taek|eek|pret|setan
 
 [Greeting]
-hi=hi|hii|hai|hei|halo|hallo|halow|hallow|hellow|hola|hox
+hi=hi|hii|hai|hei|halo|hallo|halow|hallow|hellow|hola|hox|hy
 kabar=apa kabar|kabar
+yo=yo|yoyoi
 
 [Sapaan]
 aku=aku|saya|gue|gw|akyu|ane
@@ -25,12 +26,17 @@ siapa=siapa|syapa|sapa
 apa=apa|apakah
 mengapa=mengapa|ngapa|napa
 berapa=berapa|brp|brapa
+bagaimana=bagaimana|bgmn|bgm
+
+[TanyaLokasi]
+dimana=di mana|dimana
+
 
 [Perintah]
 cari=cariin|carikan|cari|temukan
 
 [Respon]
-baik=baik|baiklah|okey|oke|okelah|sip|sipp|senang|seneng
+baik=baik|baiklah|okey|oke|okelah|sip|sipp|senang|seneng|yoi
 buruk=mbuh|tauah|tauk|ga tau|ngga tau|entahlah|gaje|gajelas|karepmu|auah|au ah
 
 [Waktu]
@@ -71,6 +77,15 @@ nominal=.*\d
 range=kisaran|seharga|seputar|harga
 harga=harga|hrga
 
+[Angka]
+angka=.*\d
+angkasatuan=satu|dua|tiga|empat|lima|enam|tujuh|delapan|sembilan|sepuluh|seratus|seribu|sejuta
+
+[Satuan]
+ribu=ribu|rb
+juta=juta|jt
+milyar=milyar|milyr|miliar
+
 [Kencantikan]
 baik=ganteng|cantik|keren|hebat|powerful|top|pinter
 buruk=jelek|songong|gila|budeg
@@ -82,6 +97,10 @@ baik=suka|demen|seneng|kesengsem|trisna|love
 [Ekspresi]
 baik=haha|hehe|hihi|hoho|wkwk
 kaget=eehh|ehh|wow
+
+[Sifat]
+baik=baik|super|luar biasa|hebat|keren|cool
+buruk=jahat|genit
 
 [Figure]
 presiden=soekarno|soeharto|sby|jokowi|megawati|prabowo|jkw

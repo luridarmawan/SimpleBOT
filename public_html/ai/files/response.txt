@@ -39,6 +39,11 @@ say=Saya ini mesin otomasi, status tentang saya sepertinya tidak perlu dipertany
 say=Saya ROBOT, status tentang saya bukan masalah
 say=Seandainya saja menjadi yang mudah untuk disampaikan :(
 
+[TanyaLokasi]
+say=Tidak jauh kok
+say=Saya bisa ada dimana saja
+say=Hhhmm... agak sulit juga menjawabnya...
+
 [TanyaTentangTokoh]
 say=Sepertinya tokoh terkenal
 say=Terdengar familiar
@@ -80,6 +85,11 @@ say=Sepertinya menyenangkan
 say=Nikmat sekali sepertinya
 say=Kadang bersama-sama lebih menyenangkan
 
+[Cuaca]
+say=Sepertinya menyenangkan
+say=Terasa sejuk disini
+say=Cerah secerah harapan
+
 [Keraguan]
 say=begitulah ...
 say=Mesti berposotif thingking
@@ -107,6 +117,20 @@ say=hhmm..
 say=Semoga akan terus membaik hasilnya
 say=Sedih merasakannya
 say=Seandainya kamu bisa merasakan gerimisnya hati ini
+
+[UngkapanBaik]
+say=hhmmm....
+say=berharap bisa memberikan sesuatu yg lebih baik lagi
+say=dicoba untuk berusaha lebih baik lagi
+say=terbaik yang bisa dilakukan
+say=terus berusaha yang terbaik
+
+[UngkapanBuruk]
+say=Maaf ..
+say=berharap bisa memberikan sesuatu yg lebih baik lagi
+say=dicoba untuk berusaha lebih baik lagi
+say=terbaik yang bisa dilakukan
+say=terus berusaha yang terbaik
 
 [InginTahu]
 say=mmm.. boleh tau apa itu %word% ?

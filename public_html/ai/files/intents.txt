@@ -49,14 +49,34 @@ say=siapa @whatever
 say=siapa
 say=^nama @whatever
 
+[TanyaLokasi]
+say=@TanyaLokasi rumah @Sapaan:kamu
+say=@TanyaLokasi rumahmu
+say=@TanyaLokasi rumah
+say=@TanyaLokasi @Sapaan:kamu
+
 [Waktu]
 say=@Tanya @Waktu
 say=@Waktu:-waktu @Tanya
+
+[Cuaca]
+say=@Tanya cuaca
+
+[Angka]
+say=@berapapun @Satuan
 
 
 [Ekspresi]
 say=^@Ekspresi
 say=^@Keraguan
+
+[UngkapanBaik]
+say=@Sapaan @Sifat:baik
+say=@Sifat:baik
+
+[UngkapanBuruk]
+say=@Sapaan @Sifat:buruk
+say=@Sifat:buruk
 
 [ResponBaik]
 say=@Respon:baik

@@ -65,6 +65,7 @@ untuk konfigurasi custom, misal untuk perubahan path tempat library berada, bisa
 ```
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
+  SimpleBOT.Handler['isipulsa'] := @customHandler; // Custom Handler
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
@@ -102,7 +103,7 @@ data disematkan di dalam body post, dengan format berikut
 format ini mengikuti pola message dari Telegram.
 
 
-***Format JSON Output***
+### Format JSON Output
 
 ```
 {
@@ -123,7 +124,7 @@ format ini mengikuti pola message dari Telegram.
 
 
 
-**Pengujian**
+### Pengujian
 
 Pengujian dari command-line bisa dilakukan dengan syntax berikut:
 
@@ -139,4 +140,5 @@ atau bisa dengan menggunakan aplikasi RESTClient lainnya.
 
 ### Web Folder Structure
 
-![Folder Structure](img/folder-structure.png "Folder Structure");
+![Folder Structure](img/folder-structure.png "Folder Structure")
+
