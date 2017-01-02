@@ -85,10 +85,17 @@ say=Sepertinya menyenangkan
 say=Nikmat sekali sepertinya
 say=Kadang bersama-sama lebih menyenangkan
 
+[Kabar]
+say=Saya baik-baik saja
+say=Luar biasa
+say=Semangat sekali hari ini
+say=sehat
+
 [Cuaca]
 say=Sepertinya menyenangkan
 say=Terasa sejuk disini
 say=Cerah secerah harapan
+say=Nyaman rasanya
 
 [Keraguan]
 say=begitulah ...
@@ -103,6 +110,15 @@ say=Hi %Name%, email anda (%Email%) telah kami simpan
 
 [TanyaEmailResponse]
 say=Hi %Name%, email anda (%Email%) telah kami simpan.
+
+[DeskripsiResponse]
+say=Informasi saya pelajari dulu
+say=Ok
+say=Terima kasih
+
+[Cari]
+say=Cari tentang apa yaa?
+say=Cari apa?
 
 [EmailTidakValid]
 say=Maaf, sepertinya email anda tidak valid

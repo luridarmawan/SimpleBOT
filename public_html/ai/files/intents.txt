@@ -7,7 +7,7 @@ say=@WordCencor
 
 [Greeting]
 say=@Greeting apa kabar
-say=@Greeting
+say=@Greeting:hi
 say=selamat @Waktu
 say=how are you
 say=how are u
@@ -54,15 +54,28 @@ say=@TanyaLokasi rumah @Sapaan:kamu
 say=@TanyaLokasi rumahmu
 say=@TanyaLokasi rumah
 say=@TanyaLokasi @Sapaan:kamu
+say=@Sapaan:kamu @TanyaLokasi
 
-[Waktu]
-say=@Tanya @Waktu
-say=@Waktu:-waktu @Tanya
+[Kabar]
+say=@Tanya:bagaimana kabar@Sapaan:kamu
+say=@Tanya:bagaimana kabar
+say=@Tanya:bagaimana @Sapaan:kamu
+say=@Tanya:apa kabar@Sapaan:kamu
+say=@Tanya:apa kabar
+say=@Sapaan:kamu @Tanya:bagaimana
+say=kabar@Sapaan:kamu @Tanya:bagaimana
+say=kabar @Tanya:bagaimana
 
 [Cuaca]
-say=@Tanya cuaca
+action=cuaca
+say=@Tanya:bagaimana cuaca
+say=cuaca @Tanya
+say=suasana @Tanya:bagaimana
+say=cuaca
 
 [Angka]
+action=angka
+say=@Angka @Satuan
 say=@berapapun @Satuan
 
 
@@ -84,6 +97,10 @@ say=@Respon:baik
 [ResponBuruk]
 say=@Respon:buruk
 
+[Waktu]
+say=@Tanya @Waktu
+say=@Waktu:-waktu @Tanya
+
 [Deskripsi]
 action=define
 say=@Key itu adalah @Value
@@ -91,9 +108,11 @@ say=@Key adalah @Value
 say=@Key adl @Value
 say=@Key itu @Value
 
+[Cari]
+action=cari
+say=@Perintah:cari
+
 [Browse]
 action=url|post|http://local-echo.fastplaz.com/?var1=value
 say=browse @whatever
 
-[Tanya]
-say=@Tanya

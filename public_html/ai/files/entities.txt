@@ -14,7 +14,7 @@ yo=yo|yoyoi
 
 [Sapaan]
 aku=aku|saya|gue|gw|akyu|ane
-kamu=kamu|kmu|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente
+kamu=kamu|kmu|mu|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente
 dia=om|mbah|pak|mas|pakdhe|kak|kakak|mas|bu|ibu|dek
 kakak=kk
 
@@ -26,11 +26,14 @@ siapa=siapa|syapa|sapa
 apa=apa|apakah
 mengapa=mengapa|ngapa|napa
 berapa=berapa|brp|brapa
-bagaimana=bagaimana|bgmn|bgm
+bagaimana=bagaimana|gimana|gmn|bgmn|bgm
 
 [TanyaLokasi]
 dimana=di mana|dimana
 
+[Pembayaran]
+cicilan=cicilan|cicil|angsuran|angsur
+tunai=tunai
 
 [Perintah]
 cari=cariin|carikan|cari|temukan
@@ -69,13 +72,17 @@ good=sehat|kuat|semangat|sembuh
 bad=sakit|demam|pusing
 
 [HargaLevel]
-mahal=mahal|mhal
-murah=murah|mrah
+mahal=paling mahal|termahal|mahal|mhal
+murah=paling murah|termurah|murah|mrah
 
 [Nominal]
 nominal=.*\d
 range=kisaran|seharga|seputar|harga
 harga=harga|hrga
+
+[RangeNilai]
+minimal=minimal|min|mulai dari|mulai|terendah
+maksimal=maksimal|maximal|max|dibawah|di bawah|dibaah|kurang dari|kurang|tidak lebih dari|tdk lebih dr|tidak lebih|tdk lebih|tertinggi
 
 [Angka]
 angka=.*\d

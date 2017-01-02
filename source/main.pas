@@ -66,19 +66,19 @@ begin
   // telegram style
   //   {"message":{"message_id":0,"text":"Hi","chat":{"id":0}}}
   json := TJSONUtil.Create;
-  json.LoadFromJsonString(Request.Content);
-  Text := json['message/text'];
-  if Text = 'False' then
-    Text := '';
-  messageID := json['message/message_id'];
-  chatID := json['message/chat/id'];
-  userName := json['message/chat/username'];
-  fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
-  json.Free;
-
-  // jika tidak ada di body, ambil dari parameter POST
-  if Text = '' then
+  try
+    json.LoadFromJsonString(Request.Content);
+    Text := json['message/text'];
+    if Text = 'False' then
+      Text := '';
+    messageID := json['message/message_id'];
+    chatID := json['message/chat/id'];
+    userName := json['message/chat/username'];
+    fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
+  except
+    // jika tidak ada di body, ambil dari parameter post
     Text := _POST['text'];
+  end;
 
 
   SimpleBOT := TSimpleBotModule.Create;
@@ -89,7 +89,7 @@ begin
     SimpleBOT.UserData['FullName'] := fullName;
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
-  SimpleBOT.Handler['property_search'] := @defineHandler;
+  SimpleBOT.Handler['define'] := @defineHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
