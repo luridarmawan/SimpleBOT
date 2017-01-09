@@ -3,44 +3,59 @@ action=example
 say=example
 
 [WordCencor]
-gila=gila|gendeng|gemblung|crazy|pea|kampret
+gila=gila|gendeng|crazy|pea|kampret
 binatang=asu|anjing|babi
-lainnya=tai|taek|eek|pret|setan
+lainnya=tai|taek|eek|pret|setan|kakeane|dancuk|jiancuk
+sexuality=kontol|ngentu|bawuk|ngentot
 
 [Greeting]
 hi=hi|hii|hai|hei|halo|hallo|halow|hallow|hellow|hola|hox|hy
 kabar=apa kabar|kabar
+salam=salam kenal|salam
 yo=yo|yoyoi
 
+[Salam]
+salam=assalamualaikum|assalamu'alaikum
+
 [Sapaan]
-aku=aku|saya|gue|gw|akyu|ane
-kamu=kamu|kmu|mu|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente
+aku=aku|saya|gue|gwe|gw|akyu|ane|私
+kamu=kamu|kmu|mu|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente|sampean|samean
 dia=om|mbah|pak|mas|pakdhe|kak|kakak|mas|bu|ibu|dek
 kakak=kk
 
 [Abaikan]
 yuk=dong|yuk
 
-[Tanya]
-siapa=siapa|syapa|sapa
-apa=apa|apakah
-mengapa=mengapa|ngapa|napa
-berapa=berapa|brp|brapa
-bagaimana=bagaimana|gimana|gmn|bgmn|bgm
-
 [TanyaLokasi]
 dimana=di mana|dimana
 
 [Pembayaran]
-cicilan=cicilan|cicil|angsuran|angsur
+cicilan=cicilan|cicil|angsuran|angsur|installment|instalment
 tunai=tunai
+
+[Tanya]
+siapa=siapa|syapa|sapa
+apa=apa|apakah
+mengapa=mengapa|ngapa|napa|kenapa
+berapa=berapa|brp|brapa|piro
+bagaimana=bagaimana|gimana|gmn|bgmn|bgm
+bisa=bisakah|bisa|boleh|bolehkan|bolehkan
 
 [Perintah]
 cari=cariin|carikan|cari|temukan
+beli=belikan|beli|blikan|beliin|pesan|pesen|pesan|pesenin|pesanin
+buat=mbuat|buatkan|buat|buwat|buatin
+hitung=hitung|hitungkan|hitungin
 
 [Respon]
-baik=baik|baiklah|okey|oke|okelah|sip|sipp|senang|seneng|yoi
-buruk=mbuh|tauah|tauk|ga tau|ngga tau|entahlah|gaje|gajelas|karepmu|auah|au ah
+baik=baik|baiklah|okey|oke|okelah|sip|sipp|senang|seneng|yoi|terima kasih|terima ksh|trm ksh|thx|thanks|silahkan|selow|woles|slow|iya|ya|yak
+buruk=mbuh|tauah|tauk|ga tau|ngga tau|entahlah|gaje|gajelas|karepmu|auah|au ah|ga asik|gak asik|gak asyik|goblok|sombong|sontoloyo|asem|terserah
+maklum=maklumi|maklum
+gemblung=gemblung|gokil
+
+[Logika]
+ya=iyak|yak|yak|iyes|yes
+tidak=tidak|tdk|nggak|gak|ga
 
 [Waktu]
 jam=jam
@@ -49,27 +64,39 @@ minggu=minggu
 bulan=bulan|bln
 tahun=tahun|thn
 tanggal=tanggal|tgl
-waktu=pagi|siang|sore|malam|malem
+waktu=pagi|siang|sore|malam|malem|morning|night
 
 [Kondisi]
 jika=jika|kalau|kalaw|kalo|klo|apabila|bila
 
 [RutinitasHarian]
-makan=makan|mangan|maem|mkan
+makan=makan|mangan|maem|mkan|makanan
+minum=minum|mnum|minuman
 mandi=mandi|mndi
 tidur=tidur|turu|bobo
 kerja=kerja|gawe
 
+[Aktivitas]
+laku=lakukan|jalani|perbuat
+
 [PersonalStatus]
-nikah=nikah|menikah|merid|married
+nikah=nikah|menikah|merid|married|meried
 single=jomblo|single|gadis|gds|lajang|perjaka
+
+[Umur]
+umur=umur|usia
+umurmu=umurmu
+
+[JenisKelamin]
+laki=laki-laki|laki laki|laki|lanang|lelaki
+perempuan=perempuan|gadis|ibu
 
 [PersonalKnowledge]
 tahu=kenal|tau|tahu|ngerti|ngertiin
 
 [Keadaan]
-good=sehat|kuat|semangat|sembuh
-bad=sakit|demam|pusing
+baik=sehat|kuat|semangat|sembuh
+buruk=sakit|demam|pusing|capek|lelah
 
 [HargaLevel]
 mahal=paling mahal|termahal|mahal|mhal
@@ -94,8 +121,8 @@ juta=juta|jt
 milyar=milyar|milyr|miliar
 
 [Kencantikan]
-baik=ganteng|cantik|keren|hebat|powerful|top|pinter
-buruk=jelek|songong|gila|budeg
+baik=ganteng|cantik|keren|hebat|powerful|top|pinter|pintar
+buruk=jelek|songong|gila|budeg|bodoh
 
 [Perasaan]
 tidak=benci|jijay|ga suka|ga seneng
@@ -106,15 +133,19 @@ baik=haha|hehe|hihi|hoho|wkwk
 kaget=eehh|ehh|wow
 
 [Sifat]
-baik=baik|super|luar biasa|hebat|keren|cool
-buruk=jahat|genit
+baik=baik|super|luar biasa|hebat|keren|cool|pinter|cerdas
+buruk=jahat|genit|bodoh|goblok|jelek
 
 [Figure]
 presiden=soekarno|soeharto|sby|jokowi|megawati|prabowo|jkw
 pahlawan=pattimura|diponegoro|kartini
 jagoan123=ansori|encang|ihdi|oka|abi|ines
 dev=peter|bams|bambang|anne|deroh|ratu|yudi|joko
-devpascal=indra|tigor|derit
+devpascal=indra|tigor|derit|kofa|maskofa
+
+[MelakukanSesuatu]
+hubungi=menghubungi|hubungi|ngubungin|kontak
+belajar=belajar
 
 [Sedang]
 sudah=sdh|sudah|sdah
