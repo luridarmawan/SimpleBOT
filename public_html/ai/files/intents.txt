@@ -5,6 +5,9 @@ say=@Example
 [WordCencor]
 say=@WordCencor
 
+[Test1]
+say=test
+
 [ResponBaik]
 say=^@Respon:baik
 say=^@Respon:maklum
@@ -114,6 +117,7 @@ say=namaku adalah @Name
 say=namaku @Name
 say=nama @Sapaan:aku @Name
 say=@Name nama @Sapaan:aku
+say=@Name namaku
 say=^nama @Name
 say:Name=^@Sapaan:aku @Name
 

@@ -1,3 +1,4 @@
+
 [Introduction]
 aboutme=\nPerkenalkan, saya adalah robot penjawab pesan otomatis.\nSaya akan berusaha membantu anda.\nMohon Maaf jika ada yang kurang bisa saya pahami nanti.
 firstsession=\n\nSepertinya kita belum pernah bertemu.
@@ -266,6 +267,7 @@ say=agak sulit juga yaa...
 [KataTanyaSaja]
 say=apa?
 say=apa yaa?
+say=bagaimana?
 say=%Tanya_value% apanya?
 say=Tentang apa?
 

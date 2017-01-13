@@ -137,39 +137,13 @@ var
   s: string;
 begin
   s := Trim(Message);
-  if s <> '' then
-  begin
-    //Result := 'Your custom message: ..... ';
-    if SimpleBOT.UserData['object'] <> '' then
-      Result := SimpleBOT.GetResponse('nonewithobject')
-    else
-      Result := SimpleBOT.GetResponse('none');
-  end;
-
-  if isWord(s) then
-  begin
-    if isEmail(s) then
-    begin
-
-      // do something
-
-      Result := 'data Email telah kami simpan.';
-    end
-    else
-    begin
-      s := StringReplace(SimpleBOT.GetResponse('InginTahu', ''),
-        '%word%', s, [rfReplaceAll]);
-      Result := s;
-    end;
-    Exit;
-  end;
+  s := StringReplace(SimpleBOT.GetResponse('InginTahu', ''), '%word%',
+    s, [rfReplaceAll]);
+  Result := s;
 
 
   // simpan message ke DB, untuk dipelajari oleh AI
 
-
-
-  LogUtil.Add(Message, _AL_LOG_LEARN);
 
 end;
 

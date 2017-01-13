@@ -21,9 +21,10 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="59"/>
-        <CursorPos X="80" Y="107"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="24" Y="141"/>
         <UsageCount Value="71"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -35,8 +36,7 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="280"/>
+        <TopLine Value="303"/>
         <CursorPos X="19" Y="304"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
@@ -57,7 +57,7 @@
       </Unit6>
       <Unit7>
         <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit7>
@@ -99,14 +99,14 @@
       </Unit12>
       <Unit13>
         <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="3"/>
         <CursorPos Y="8"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="201"/>
         <CursorPos X="33" Y="263"/>
         <UsageCount Value="24"/>
@@ -114,18 +114,17 @@
       </Unit14>
       <Unit15>
         <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="53" Y="23"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit15>
       <Unit16>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="152"/>
         <CursorPos X="158" Y="217"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/http_lib.pas"/>
