@@ -22,8 +22,8 @@
       "datasource": "file",
       "debug": false,
       "basedir": "files/",
-      "entities": "entities-property.txt,entities.txt",
-      "intents": "intents-property.txt,intents.txt",
+      "entities": "property-entities.txt,entities.txt",
+      "intents": "property-intents.txt,intents.txt",
       "response": "response.txt,questions.txt"
     }
   },

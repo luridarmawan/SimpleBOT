@@ -141,7 +141,7 @@ juta=juta|jt
 milyar=milyar|milyr|miliar
 
 [Kencantikan]
-baik=ganteng|cantik|keren|hebat|powerful|top|pinter|pintar|cakep
+baik=ngganteng|ganteng|cantik|keren|hebat|powerful|top|pinter|pintar|cakep
 buruk=jelek|songong|gila|budeg|bodoh
 
 [Perasaan]
@@ -151,6 +151,9 @@ baik=suka|demen|seneng|kesengsem|trisna|love
 [Ekspresi]
 baik=haha|hehe|hihi|hoho|wkwk
 kaget=eehh|ehh|wow
+
+[Keraguan]
+kok=kok|koq|lhoo|lho|lah
 
 [Sifat]
 baik=baik|super|luar biasa|hebat|keren|cool|pinter|cerdas
@@ -193,7 +196,4 @@ tanya=\?
 titik=.
 koma=,
 seru=\!
-
-[Keraguan]
-kok=kok|koq|lho|lah
 

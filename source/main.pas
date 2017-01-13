@@ -140,7 +140,10 @@ begin
   if s <> '' then
   begin
     //Result := 'Your custom message: ..... ';
-    Result := SimpleBOT.GetResponse('none');
+    if SimpleBOT.UserData['object'] <> '' then
+      Result := SimpleBOT.GetResponse('nonewithobject')
+    else
+      Result := SimpleBOT.GetResponse('none');
   end;
 
   if isWord(s) then

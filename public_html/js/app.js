@@ -18,7 +18,10 @@ jQuery(document).ready(function() {
 
   function InsertChatBox( Sender, Message){
     Message = Message.trim();
+    //Message = Message.replace(/\\/, "\\\\");
+    Message = Message.replace(/\\/g, "|")
     Message = Message.replace(/\n/g, "<br>");
+    Message = Message.replace(/\|n/g, "<br>");
     html = '<li class="left clearfix">';
     html = html + '<span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=BOT" class="img-circle" /></span>';
     html = html + '<div class="chat-body clearfix">';
@@ -104,7 +107,9 @@ jQuery(document).ready(function() {
     $( '#btnChat').attr( 'disabled', true);
     SendMessage( '', Message);
 
-    $( 'input#text').val('');
+    if (debug == null){
+      $( 'input#text').val('');
+    }
     $( 'input#text').focus();
   });
 
