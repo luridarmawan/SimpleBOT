@@ -62,7 +62,7 @@ cari=cariin|carikan|cari|temukan
 beli=belikan|beli|blikan|beliin|pesan|pesen|pesan|pesenin|pesanin
 jual=jual|jualin
 buat=mbuat|buatkan|buat|buwat|buatin
-hitung=hitung|hitungkan|hitungin
+hitung=hitung|hitungkan|hitungin|itungin
 ambil=ambil|ambilkan
 pergi=pergi
 

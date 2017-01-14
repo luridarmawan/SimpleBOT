@@ -22,9 +22,18 @@
       "datasource": "file",
       "debug": false,
       "basedir": "files/",
-      "entities": "property-entities.txt,entities.txt",
-      "intents": "property-intents.txt,intents.txt",
-      "response": "response.txt,questions.txt"
+      "entities": [
+        "property-entities.txt",
+        "entities.txt"
+        ],
+      "intents": [
+        "property-intents.txt",
+        "intents.txt"
+        ],
+      "response": [
+        "response.txt",
+        "questions.txt"
+        ]
     }
   },
   "telegram": {

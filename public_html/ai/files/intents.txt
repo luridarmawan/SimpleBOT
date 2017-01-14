@@ -151,6 +151,7 @@ say=@Umur
 [TokohSiapa]
 say=@Tanya:siapa @apapun @Figure
 say=@Tanya:siapa @Figure   
+say=@Figure @Tanya:siapa
 
 [SiapaAku]
 say=@Tanya:siapa @Sapaan:aku
@@ -233,8 +234,10 @@ say=loremipsum
 
 [Math]
 action=math
+boundary=false
 say=@Tanya:berapa @Formula
 say=@Perintah:hitung @Formula
+
 
 [TanyaSeandainya]
 say=@Tanya:bagaimana @Kondisi:jika @apapun
