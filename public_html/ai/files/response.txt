@@ -216,6 +216,7 @@ say=Sedih merasakannya
 say=Seandainya kamu bisa merasakan gerimisnya hati ini
 say=Sayang sekali
 say=Sayang sekali, bagaimana kalau diusahakan lagi
+say=Mohon maaf jika belum sesuai dengan harapan
 
 [UngkapanBaik]
 say=hhmmm....
@@ -279,6 +280,10 @@ say=bagaimana?
 
 [xxx]
 say=xxxxxx
+
+[SuggestionResponse]
+say=sarannya kami simpan, terima kasih.
+say=Terima kasih masukannya
 
 [Lahir]
 say=belum lama

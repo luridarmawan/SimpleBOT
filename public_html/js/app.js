@@ -88,6 +88,7 @@ jQuery(document).ready(function() {
       }
       $( 'input#text').attr( 'disabled', false);
       $( '#btnChat').attr( 'disabled', false);
+      $( 'input#text').focus();
     });
 
   }

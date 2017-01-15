@@ -18,7 +18,7 @@ yo=yo|yoyoi
 salam=assalamualaikum|assalamu'alaikum
 
 [Sapaan]
-aku=aku|saya|gue|gwe|gw|akyu|ane|私
+aku=aku|saya|sy|gue|gwe|gw|akyu|ane|私
 kamu=kamu|kmu|mu|kamyu|kau|dikau|engkau|ngkau|anda|lu|loe|ente|sampean|samean
 dia=om|mbah|pak|mas|pakdhe|kak|kakak|mas|bu|ibu|dek
 kakak=kk
@@ -49,8 +49,8 @@ tunai=tunai
 [Tanya]
 tandatanya=\?
 siapa=siapa|syapa|sapa
-apa=apa|apakah
-mengapa=mengapa|ngapa|napa|kenapa
+apa=apa|apakah|pa
+mengapa=mengapa|ngapa|napa|kenapa|knp
 berapa=berapa|brp|brapa|piro
 bagaimana=bagaimana|gimana|gmn|bgmn|bgm
 bisa=bisakah|bisa|boleh|bolehkan|bolehkan
@@ -70,7 +70,7 @@ pergi=pergi
 baik=baik|baiklah|okey|okeh|oke|okelah|ok|sip|sipp|senang|seneng|yoi|terima kasih|terima ksh|makasih|trm ksh|thx|thanks|silahkan|selow|woles|slow|iya|ya|yak|oiyah|tentu|thank|thx
 buruk=mbuh|tauah|tauk|ga tau|ngga tau|entahlah|gaje|gajelas|karepmu|auah|au ah|ga asik|gak asik|gak asyik|goblok|sombong|sontoloyo|asem|terserah|dasar
 maklum=maklumi|maklum
-gemblung=gemblung|gokil|bego|parah|gandeng
+gemblung=gemblung|gokil|bego|parah|gandeng|songong|setres|stres|stress
 
 [Logika]
 ya=iyak|yak|yak|iyes|yes

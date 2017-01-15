@@ -36,6 +36,13 @@ say=@Sapaan:kamu @Sifat:baik
 [xxxx]
 say=xxx
 
+[SuggestionResponse]
+action=suggestion
+say=(suggest|saran) @answer : @questions
+say=(suggest|saran) @answer: @questions
+
+
+
 [Lahir]
 object=lahir
 say=@Sapaan:kamu lahir
@@ -300,14 +307,14 @@ object=pulsa
 say=@Perintah:beli @Sapaan:aku pulsa
 say=@Perintah:beli pulsa
 
+[MintaTolong]
+say=@Tolong
+
 [BisaApa]
 say=bisa @Sapaan:kamu @Lakukan
 say=@Sapaan:kamu bisa @Tanya:apa
 say=@Tanya:bisa @Tanya:apa
 say=@Tanya:bisa @apapun
-
-[MintaTolong]
-say=@Tolong
 
 [KataTanyaSaja]
 say=^@Tanya
