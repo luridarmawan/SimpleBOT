@@ -275,6 +275,10 @@ say=om telolet om
 say=omteloletom
 say=telolet
 
+[DomainWhois]
+action=domain_whois
+say=whois domain @domain
+say=whois @domain
 
 
 

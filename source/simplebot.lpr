@@ -4,7 +4,8 @@ program simplebot;
 
 uses
   cthreads,
-  fpcgi, sysutils, fastplaz_handler, common, main, routes;
+  fpcgi, sysutils, fastplaz_handler, common, main, routes, 
+domainwhois_controller;
 
 {$R *.res}
 
