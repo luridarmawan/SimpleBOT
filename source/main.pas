@@ -80,6 +80,10 @@ begin
     Text := _POST['text'];
   end;
 
+  // maybe submitted from post data
+  if Text = '' then
+    Text := _POST['text'];
+
 
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;

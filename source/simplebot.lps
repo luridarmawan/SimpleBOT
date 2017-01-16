@@ -21,9 +21,8 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="106"/>
-        <CursorPos X="85" Y="130"/>
+        <TopLine Value="64"/>
+        <CursorPos X="37" Y="79"/>
         <UsageCount Value="72"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -35,10 +34,10 @@
       </Unit3>
       <Unit4>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="205"/>
         <CursorPos Y="8"/>
         <UsageCount Value="27"/>
-        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/fastplaz_handler.pas"/>
@@ -56,7 +55,7 @@
       </Unit6>
       <Unit7>
         <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="1"/>
         <CursorPos Y="8"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
@@ -99,19 +98,20 @@
       </Unit12>
       <Unit13>
         <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="2"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="3"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
-        <EditorIndex Value="6"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="4"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit15>
@@ -255,10 +255,9 @@
       </Unit35>
       <Unit36>
         <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="11" Y="23"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit36>
       <Unit37>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/logutil_lib.pas"/>
@@ -271,126 +270,22 @@
     <OtherDefines Count="1">
       <Define0 Value="UseCThreads"/>
     </OtherDefines>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="103" Column="21" TopLine="65"/>
+        <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
       </Position1>
       <Position2>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="104" Column="27" TopLine="66"/>
-      </Position2>
-      <Position3>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="105" Column="25" TopLine="67"/>
-      </Position3>
-      <Position4>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="106" Column="26" TopLine="68"/>
-      </Position4>
-      <Position5>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="108" Column="25" TopLine="70"/>
-      </Position5>
-      <Position6>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="112" Column="23" TopLine="74"/>
-      </Position6>
-      <Position7>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="113" Column="29" TopLine="75"/>
-      </Position7>
-      <Position8>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="149" Column="21" TopLine="111"/>
-      </Position8>
-      <Position9>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="178" Column="11" TopLine="140"/>
-      </Position9>
-      <Position10>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="179" Column="11" TopLine="141"/>
-      </Position10>
-      <Position11>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="24" Column="25"/>
-      </Position11>
-      <Position12>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="16" Column="11"/>
-      </Position12>
-      <Position13>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="87" Column="5" TopLine="64"/>
-      </Position13>
-      <Position14>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="180" Column="30" TopLine="143"/>
-      </Position14>
-      <Position15>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="19"/>
-      </Position15>
-      <Position16>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="126" TopLine="111"/>
-      </Position16>
-      <Position17>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="22" Column="63"/>
-      </Position17>
-      <Position18>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="24" Column="63"/>
-      </Position18>
-      <Position19>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="179" Column="70" TopLine="146"/>
-      </Position19>
-      <Position20>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="178" TopLine="154"/>
-      </Position20>
-      <Position21>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="378" TopLine="375"/>
-      </Position21>
-      <Position22>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="383" Column="6" TopLine="375"/>
-      </Position22>
-      <Position23>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="19" Column="39" TopLine="9"/>
-      </Position23>
-      <Position24>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="77" TopLine="35"/>
-      </Position24>
-      <Position25>
-        <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
-      </Position25>
-      <Position26>
         <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
         <Caret Line="8"/>
-      </Position26>
-      <Position27>
+      </Position2>
+      <Position3>
         <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
         <Caret Line="263" Column="33" TopLine="201"/>
-      </Position27>
-      <Position28>
+      </Position3>
+      <Position4>
         <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
         <Caret Line="23" Column="53"/>
-      </Position28>
-      <Position29>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="450" Column="41"/>
-      </Position29>
-      <Position30>
-        <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
-        <Caret Line="77" Column="46"/>
-      </Position30>
+      </Position4>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

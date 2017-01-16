@@ -38,8 +38,8 @@ say=xxx
 
 [SuggestionResponse]
 action=suggestion
-say=(suggest|saran) @answer : @question
-say=(suggest|saran) @answer: @question
+say=(suggest|saran|teach) @answer : @question
+say=(suggest|saran|teach) @answer: @question
 
 
 
