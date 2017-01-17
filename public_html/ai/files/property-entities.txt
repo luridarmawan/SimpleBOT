@@ -1,0 +1,41 @@
+
+[PropertyType]
+ho=perumahan|prumahan|house|rumah|rmh|rmah|rumh|ruma
+ap=apartment|apartemen|apartement|apratement|apratemen|aptemen|apartmen
+la=land|tanah|tnah|tnh
+co=ruko|toko|gudang|gdang|kantor
+kost=kost|kos|kosan
+
+[PropertyCategory]
+s=sell|di jual|dijual|jual|njual|beli|bli
+r=rent|di sewa|disewa|sewa|nyewa
+
+[PropertyDetail]
+kamartidur=kamar tidur|ruang tidur|tempat tidur|tmp tidur|bedroom
+kamarmandi=kamar mandi|tempat mandi|kmr mandi|bathroom
+kamar=kamar|kmar|ruang
+pintu=pintu|pntu
+
+[NewProperty]
+np=new property|property baru
+
+[Facility]
+beauty salon=beauty salon|hair and nail salon
+internet=internet|free internet|acceess to internet
+parking=parking|free parking|parkir
+pool=pool|swimming pool|kolam renang
+wifi=wifi|wi-fi|wi fi|access to wifi|access to wi-fi
+
+[LocationRange]
+daerah=daerah
+sebelah=sebelah|sblah
+dekat=dekat|dekat2|deket
+sekitar=seputar|sekitar
+
+[Sort]
+distance=distance|nearest|near|closest|nearby|near by|near me|dekat|deket|seberang
+price=price|cheap|cheapest
+rating=rating|best|top|great
+
+[bedroommin]
+nominal=.*\d

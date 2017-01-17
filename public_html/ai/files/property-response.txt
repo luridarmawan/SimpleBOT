@@ -1,0 +1,5 @@
+
+[PropertyWithDetail]
+say=asdad
+
+[PropertySearch]

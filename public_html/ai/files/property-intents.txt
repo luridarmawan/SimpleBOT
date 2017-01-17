@@ -1,0 +1,79 @@
+
+[PropertyCicilan]
+action=property_search_cicilan
+say=@PropertyType @PropertyCategory @Pembayaran:cicilan @Angka @Satuan
+say=@PropertyType @Pembayaran:cicilan @Angka @Satuan
+
+[PropertyCicilanComplex]
+action=property_search_cicilan_complex
+say=@Pembayaran:cicilan @Angka @Satuan
+say=@Pembayaran:cicilan @PropertyType @jumlah
+say=@Pembayaran:cicilan @jumlah
+
+
+[PropertySearchComplex]
+action=property_search_complex
+object=properti
+say=@PropertyType @PropertyCategory @apapun harga @RangeNilai @Angka @Satuan di @area
+say=@PropertyType @apapun harga @RangeNilai @Angka @Satuan di @area
+say=@PropertyType @PropertyCategory harga @RangeNilai @Angka @Satuan di @area
+say=@PropertyType @PropertyCategory harga @RangeNilai @Angka @Satuan @area
+say=@PropertyType @PropertyCategory harga @RangeNilai @Angka @Satuan
+say=@PropertyType @PropertyCategory harga @Angka @Satuan @area
+say=@PropertyType @PropertyCategory harga @Angka @Satuan
+say=@PropertyType @PropertyCategory @RangeNilai @Angka @Satuan di @area
+say=@PropertyType @PropertyCategory @RangeNilai @Angka @Satuan @area
+say=@PropertyType @PropertyCategory @RangeNilai @Angka @Satuan
+say=@PropertyType @PropertyCategory @Angka @Satuan @area
+say=@PropertyType @PropertyCategory @Angka @Satuan
+say=@PropertyType @PropertyCategory @HargaLevel di @area
+say=@PropertyType @PropertyCategory @HargaLevel
+say=@PropertyType @HargaLevel di @area
+say=@PropertyType @HargaLevel
+say=@PropertyType harga @RangeNilai @Angka @Satuan di @area
+say=@PropertyType harga @RangeNilai @Angka @Satuan @area
+say=@PropertyType harga @RangeNilai @Angka @Satuan
+
+[PropertySearch]
+action=property_search
+object=properti
+say=@Perintah:cari @PropertyType @PropertyCategory di @area
+say=@Perintah:cari @PropertyType @PropertyCategory
+say=@Perintah:cari @PropertyType di @LocationRange @area
+say=@Perintah:cari @PropertyType di@LocationRange @area
+say=@Perintah:cari @PropertyType @LocationRange @area
+say=@Perintah:cari @PropertyType di @area harga @harga
+say=@Perintah:cari @PropertyType di @area
+say=@Perintah:cari @PropertyType @Nominal @whatever
+say=@Perintah:cari @PropertyType @whatever
+say=@Perintah:cari @PropertyType:-kostx
+say=@Perintah:cari @PropertyType
+
+[PropertySearchDefault]
+action=property_search
+object=properti
+say=@PropertyType @PropertyCategory di @area
+say=@PropertyType @PropertyCategory
+say=@PropertyType di @LocationRange @area
+say=@PropertyType di@LocationRange @area
+say=@PropertyType @LocationRange @area
+say=@PropertyType di @area harga @harga
+say=@PropertyType di @area
+say=@PropertyType @Nominal @whatever
+say=@PropertyType @whatever
+say=@PropertyType
+
+
+[PropertySearchKost]
+say=@Perintah:cari @PropertyType:kost
+say=@PropertyType:kost
+
+[PropertyAction]
+action=property_request
+say=@PropertyCategory @PropertyType
+
+[PropertyWithDetail]
+action=yes
+say=@bedroommin @PropertyDetail:kamar
+say=@bedroommin @PropertyDetail:pintu
+
