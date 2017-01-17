@@ -15,10 +15,10 @@ type
 
   TMainModule = class(TMyCustomWebModule)
   private
-    DomainWhois : TDomainWhoisController;
+    DomainWhois: TDomainWhoisController;
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
     function defineHandler(const IntentName: string; Params: TStrings): string;
-    function isTelegram:boolean;
+    function isTelegram: boolean;
   public
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
@@ -50,7 +50,7 @@ end;
 // Init First
 procedure TMainModule.BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
 begin
-//  Response.ContentType := 'application/json';
+  //  Response.ContentType := 'application/json';
 end;
 
 // GET Method Handler
@@ -67,7 +67,7 @@ var
   json: TJSONUtil;
   text_response: string;
   Text, chatID, messageID, fullName, userName: string;
-  i : integer;
+  i: integer;
 begin
 
   // telegram style
@@ -106,12 +106,14 @@ begin
   SimpleBOT.Free;
 
   // Send To Telegram
+  // add paramater 'telegram=1' to your telegram url
   if isTelegram then
   begin
-    SimpleBOT.TelegramToken := '217792689:AAEQlajK1_ERu-h38ZZr1_hStamWgBhydN0';
-    for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count -1 do
+    for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
-      SimpleBOT.TelegramSend(chatID, messageID, SimpleBOT.SimpleAI.ResponseText[i]);
+      SimpleBOT.TelegramSend('217792689:AAEQlajK1_ERu-h38ZZr1_hStamWgBhydN0',
+        chatID, messageID,
+        SimpleBOT.SimpleAI.ResponseText[i]);
     end;
   end;
 
@@ -167,7 +169,6 @@ begin
 
 
   // simpan message ke DB, untuk dipelajari oleh AI
-
 
 end;
 
