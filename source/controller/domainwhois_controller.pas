@@ -94,7 +94,9 @@ begin
       + '\nExpiration Date: ' + Whois.ExpiredDate
       + '\nName Server: ' + Whois.NameServer;
     if ((optionInfo = 'full') or (optionInfo = 'lengkap')) then
+    begin
       Result := StringToJSONString(Whois.Data.Text);
+    end;
   except
     on E: Exception do
     begin

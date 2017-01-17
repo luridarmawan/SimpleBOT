@@ -66,7 +66,7 @@ procedure TMainModule.Post;
 var
   json: TJSONUtil;
   text_response: string;
-  Text, chatID, messageID, fullName, userName: string;
+  Text, chatID, messageID, fullName, userName, telegramToken: string;
   i: integer;
 begin
 
@@ -109,9 +109,10 @@ begin
   // add paramater 'telegram=1' to your telegram url
   if isTelegram then
   begin
+    telegramToken := Config[_TELEGRAM_CONFIG_TOKEN];
     for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
-      SimpleBOT.TelegramSend('217792689:AAEQlajK1_ERu-h38ZZr1_hStamWgBhydN0',
+      SimpleBOT.TelegramSend(telegramToken,
         chatID, messageID,
         SimpleBOT.SimpleAI.ResponseText[i]);
     end;

@@ -37,7 +37,7 @@
     }
   },
   "telegram": {
-    "token": "yourtoken"
+    "token": ""
   },
   "database": {
     "default": {
