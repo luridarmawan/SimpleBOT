@@ -21,6 +21,7 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <TopLine Value="85"/>
         <CursorPos Y="114"/>
         <UsageCount Value="74"/>
@@ -30,7 +31,7 @@
         <Filename Value="controller/domainwhois_controller.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="53"/>
+        <TopLine Value="54"/>
         <CursorPos X="53" Y="59"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
@@ -274,9 +275,8 @@
       </Unit38>
       <Unit39>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="14" Y="17"/>
+        <CursorPos X="59" Y="12"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit39>
