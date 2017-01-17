@@ -24,20 +24,26 @@
       "basedir": "files/",
       "entities": [
         "property-entities.txt",
-        "entities.txt"
+        "dokter-entities.txt",
+        "ai-entities.txt"
         ],
       "intents": [
+        "cs-intent.txt",
         "property-intents.txt",
-        "intents.txt"
+        "dokter-intents.txt",
+        "ai-intents.txt"
         ],
       "response": [
-        "response.txt",
-        "questions.txt"
+        "cs-response.txt",
+        "property-response.txt",
+        "dokter-response.txt",
+        "ai-response.txt",
+        "ai-questions.txt"
         ]
     }
   },
   "telegram": {
-    "token": ""
+    "token": "217792689:AAEQlajK1_ERu-h38ZZr1_hStamWgBhydN0"
   },
   "database": {
     "default": {

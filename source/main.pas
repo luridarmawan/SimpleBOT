@@ -112,6 +112,8 @@ begin
     telegramToken := Config[_TELEGRAM_CONFIG_TOKEN];
     for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
+      if i > 0 then
+        messageID := '';
       SimpleBOT.TelegramSend(telegramToken,
         chatID, messageID,
         SimpleBOT.SimpleAI.ResponseText[i]);
