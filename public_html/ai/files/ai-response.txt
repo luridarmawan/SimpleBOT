@@ -140,6 +140,10 @@ say=Kerendehan hati sungguh amat sangat dihargai
 say=Demikian juga dengan kamu
 say=Harapan saya bisa memberikan yang selalu lebih baik
 
+[Mengeluh]
+say=Maaf
+say=Hanya berusaha memberikan yang terbaik
+
 [SuruhanPositif]
 say=Saya akan coba melakukan dengan lebih baik
 say=Terima kasih, mohon bimbingannya
@@ -276,7 +280,7 @@ say=ada yg bisa dibantu?
 say=bagaimana?
 
 [TelegramBotStart]
-say=Hi, selamat %time_session%. Selamat datang di layanan ChatBot kami.\nApa kabar?
+say=Hi, Selamat %time_session%.\nSelamat datang di layanan ChatBot kami.\nApa kabar?
 
 [xxx]
 say=xxxxxx

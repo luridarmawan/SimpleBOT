@@ -110,7 +110,7 @@ begin
   if isTelegram then
   begin
     telegramToken := Config[_TELEGRAM_CONFIG_TOKEN];
-    if SimpleBOT.SimpleAI.Action = 'telegram_menu' then
+    if SimpleBOT.SimpleAI.Action = '' then // no mention replay, if no 'action'
       messageID := '';
     for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin

@@ -33,6 +33,11 @@ say=@Sapaan:kamu @Kencantikan:baik
 say=@Sapaan:kamu @apapun @Sifat:baik
 say=@Sapaan:kamu @Sifat:baik
 
+[Mengeluh]
+say=(kok|koq) gitu
+say=@Tanya:bagaimana sih
+say=capek (ahh|deh)
+
 [TelegramBotStart]
 action=telegram_menu
 say=/start
