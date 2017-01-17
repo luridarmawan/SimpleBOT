@@ -166,6 +166,7 @@ pahlawan=pattimura|diponegoro|kartini
 jagoan123=ansori|encang|ihdi|oka|abi|ines
 dev=peter|bams|bambang|anne|deroh|ratu|yudi|joko
 devpascal=indra|tigor|derit|kofa|maskofa
+CafeStartup=temmy|gisela|gisel|bontot
 
 [Profesi]
 pembantu=pembantu

@@ -74,7 +74,7 @@ begin
     begin
       if not Whois.Find(domainName) then
       begin
-        Result := 'gagal mendapatkan informasi whois domain ' + domainName;
+        Result := 'Informasi whois domain ' + domainName + ' tidak ditemukan';
         Exit;
       end;
       Whois.Data.SaveToFile(cacheFile);

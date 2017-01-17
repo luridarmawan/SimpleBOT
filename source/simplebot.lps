@@ -21,18 +21,18 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="85"/>
-        <CursorPos Y="114"/>
+        <TopLine Value="66"/>
+        <CursorPos X="51" Y="102"/>
         <UsageCount Value="74"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="controller/domainwhois_controller.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="54"/>
-        <CursorPos X="53" Y="59"/>
+        <CursorPos X="76" Y="77"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -276,7 +276,8 @@
       <Unit39>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="59" Y="12"/>
+        <TopLine Value="235"/>
+        <CursorPos X="22" Y="276"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit39>
@@ -311,7 +312,7 @@
     <OtherDefines Count="1">
       <Define0 Value="UseCThreads"/>
     </OtherDefines>
-    <JumpHistory Count="10" HistoryIndex="9">
+    <JumpHistory Count="12" HistoryIndex="11">
       <Position1>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
         <Caret Line="34" Column="74"/>
@@ -352,6 +353,14 @@
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
         <Caret Line="2" Column="51"/>
       </Position10>
+      <Position11>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
+        <Caret Line="273" TopLine="233"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
+        <Caret Line="276" Column="43" TopLine="234"/>
+      </Position12>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>
