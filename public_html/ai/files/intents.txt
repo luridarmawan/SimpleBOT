@@ -277,10 +277,10 @@ say=telolet
 
 [DomainWhois]
 action=domain_whois
+say=whois domain @domain @option
 say=whois domain @domain
+say=whois @domain @option
 say=whois @domain
-
-
 
 [Cari]
 action=cari

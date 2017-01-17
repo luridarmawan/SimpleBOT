@@ -5,7 +5,7 @@ unit domainwhois_controller;
 interface
 
 uses
-  whois_integration, dateutils, common, RegExpr,
+  whois_integration, dateutils, common, RegExpr, fpjson,
   Classes, SysUtils;
 
 const
@@ -18,12 +18,14 @@ type
 
   TDomainWhoisController = class
   private
+    FCache: boolean;
     Whois: TWhoisIntegration;
   public
     constructor Create;
     destructor Destroy;
 
     function whoisHandler(const IntentName: string; Params: TStrings): string;
+    property Cache: boolean read FCache write FCache;
   end;
 
 implementation
@@ -32,6 +34,7 @@ implementation
 
 constructor TDomainWhoisController.Create;
 begin
+  FCache := True;
 end;
 
 destructor TDomainWhoisController.Destroy;
@@ -42,10 +45,11 @@ function TDomainWhoisController.whoisHandler(const IntentName: string;
   Params: TStrings): string;
 var
   i: integer;
-  s, domainName, cacheFile: string;
+  s, domainName, cacheFile, optionInfo: string;
   forceWhois: boolean;
 begin
   domainName := Params.Values['domain_value'];
+  optionInfo := Params.Values['option_value'];
   if not isDomain(domainName) then
   begin
     Result := 'sepertinya nama domain tidak valid';
@@ -77,16 +81,20 @@ begin
         Result := 'Informasi whois domain ' + domainName + ' tidak ditemukan';
         Exit;
       end;
-      Whois.Data.SaveToFile(cacheFile);
+      if not FCache then
+        Whois.Data.SaveToFile(cacheFile);
     end;
 
     Result := 'Domain: ' + UpperCase( domainName)
       + '\nRegistrar: ' + Whois.Registrar
+      + '\nRegistrant: ' + Whois.Registrant
       + '\nStatus: ' + Whois.Status
       + '\nUpdated Date: ' + Whois.UpdatedDate
       + '\nCreation Date: ' + Whois.CreationDate
       + '\nExpiration Date: ' + Whois.ExpiredDate
       + '\nName Server: ' + Whois.NameServer;
+    if ((optionInfo = 'full') or (optionInfo = 'lengkap')) then
+      Result := StringToJSONString(Whois.Data.Text);
   except
     on E: Exception do
     begin
