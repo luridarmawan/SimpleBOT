@@ -6,7 +6,6 @@ interface
 
 uses
   simplebot_controller, logutil_lib, fpjson,
-  domainwhois_controller,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
 type
@@ -15,7 +14,6 @@ type
 
   TMainModule = class(TMyCustomWebModule)
   private
-    DomainWhois: TDomainWhoisController;
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
     function defineHandler(const IntentName: string; Params: TStrings): string;
     function isTelegram: boolean;
@@ -37,13 +35,10 @@ constructor TMainModule.CreateNew(AOwner: TComponent; CreateMode: integer);
 begin
   inherited CreateNew(AOwner, CreateMode);
   BeforeRequest := @BeforeRequestHandler;
-
-  DomainWhois := TDomainWhoisController.Create;
 end;
 
 destructor TMainModule.Destroy;
 begin
-  DomainWhois.Free;
   inherited Destroy;
 end;
 
@@ -100,7 +95,6 @@ begin
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
-  SimpleBOT.Handler['domain_whois'] := @DomainWhois.whoisHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
