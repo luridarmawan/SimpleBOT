@@ -50,6 +50,10 @@ action=suggestion
 say=(suggest|saran|teach) @answer : @question
 say=(suggest|saran|teach) @answer: @question
 
+[SholatJadwal]
+action=jadwal_sholat
+say=(jadwal|jadual) sholat @kota
+say=(jadwal|jadual)
 
 
 [Lahir]

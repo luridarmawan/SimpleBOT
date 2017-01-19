@@ -5,7 +5,7 @@ unit main;
 interface
 
 uses
-  simplebot_controller, logutil_lib,
+  simplebot_controller, logutil_lib, fpjson,
   domainwhois_controller,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
@@ -50,7 +50,6 @@ end;
 // Init First
 procedure TMainModule.BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
 begin
-  //  Response.ContentType := 'application/json';
 end;
 
 // GET Method Handler
