@@ -21,7 +21,7 @@
       "name": "JarWo",
       "datasource": "file",
       "debug": false,
-      "basedir": "files/",
+      "basedir": "files/ai/",
       "entities": [
         "property-entities.txt",
         "dokter-entities.txt",
