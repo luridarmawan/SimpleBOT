@@ -6,11 +6,11 @@ $.urlParam = function(name){
 
 //var url = '/ai/?_DEBUG=1&t=';
 var url = '/ai/?a=1';
+var debug = new RegExp('[\?&]' + '_DEBUG' + '=([^&#]*)').exec(window.location.href);
+var MyName = 'Me';
 
 jQuery(document).ready(function() {
   
-  //s = jQuery.urlParam('_DEBUG');
-  var debug = new RegExp('[\?&]' + '_DEBUG' + '=([^&#]*)').exec(window.location.href);
   if (debug != null){
     url = url + '&_DEBUG=1';
   }
@@ -18,10 +18,8 @@ jQuery(document).ready(function() {
 
   function InsertChatBox( Sender, Message){
     Message = Message.trim();
-    //Message = Message.replace(/\\/, "\\\\");
-    Message = Message.replace(/\\/g, "|")
+    Message = Message.replace(/\\n/g, "<br>");
     Message = Message.replace(/\n/g, "<br>");
-    Message = Message.replace(/\|n/g, "<br>");
     html = '<li class="left clearfix">';
     html = html + '<span class="chat-img pull-left"><img src="http://placehold.it/50/55C1E7/fff&text=BOT" class="img-circle" /></span>';
     html = html + '<div class="chat-body clearfix">';
@@ -48,7 +46,7 @@ jQuery(document).ready(function() {
     html = html + '<div class="chat-body clearfix">';
     html = html + '<div class="header">';
     html = html + '<small class=" text-muted"><span class="glyphicon glyphicon-time"></span>...</small>';
-    html = html + '<strong class="pull-right primary-font">Me</strong>';
+    html = html + '<strong class="pull-right primary-font">'+MyName+'</strong>';
     html = html + '</div>';
     html = html + '<p class="pull-right">';
     html = html + Message;
@@ -78,6 +76,11 @@ jQuery(document).ready(function() {
 
     posting.done(function(data) {
       response_text = data.response.text;
+      if (data.response.user != undefined){
+        if (data.response.user.name != undefined){
+          MyName = data.response.user.name;
+        }
+      }
       if ( Array.isArray( response_text)){
         $( '#log').text(  JSON.stringify( data, null, 4) );
         for (var i = 0, len = response_text.length; i < len; i++) {
@@ -119,6 +122,9 @@ jQuery(document).ready(function() {
   $( '#LogContainer').height( $( document ).height()-50);
   $( '#log').css( 'height', '100%');
 
+  if (debug != null){
+    $('#LogContainer').removeClass('hide');
+  }
   $( 'input#text').focus();
 }); 
 

@@ -115,6 +115,8 @@ begin
         chatID, messageID,
         SimpleBOT.SimpleAI.ResponseText[i]);
     end;
+    Response.Content := 'OK';
+    Exit;
   end;
 
   //---

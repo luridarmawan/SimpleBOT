@@ -21,7 +21,9 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="16"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="86"/>
+        <CursorPos Y="120"/>
         <UsageCount Value="84"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -272,8 +274,11 @@
       </Unit38>
       <Unit39>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="40"/>
+        <CursorPos X="49" Y="72"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit39>
       <Unit40>
         <Filename Value="/usr/local/share/fpcsrc/packages/rtl-extra/src/darwin/unxsockh.inc"/>
@@ -320,16 +325,15 @@
       </Unit45>
       <Unit46>
         <Filename Value="../../SimpleAI/src/controller/jadwalsholat_controller.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <CursorPos X="64" Y="29"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="66"/>
+        <CursorPos X="70" Y="23"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit46>
       <Unit47>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="52"/>
         <CursorPos X="82" Y="57"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
@@ -341,116 +345,116 @@
     <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="10" Column="3"/>
+        <Caret Line="21" Column="116"/>
       </Position1>
       <Position2>
-        <Filename Value="main.pas"/>
-        <Caret Line="21" Column="116"/>
+        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
       </Position2>
       <Position3>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
+        <Caret Line="16" Column="121"/>
       </Position3>
       <Position4>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="16" Column="121"/>
+        <Caret Line="8" Column="21"/>
       </Position4>
       <Position5>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="8" Column="21"/>
+        <Caret Line="16" Column="136"/>
       </Position5>
       <Position6>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="16" Column="136"/>
+        <Caret Line="8" Column="3"/>
       </Position6>
       <Position7>
-        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="8" Column="3"/>
-      </Position7>
-      <Position8>
         <Filename Value="main.pas"/>
         <Caret Line="34" Column="106"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
+        <Caret Line="19" Column="129"/>
       </Position8>
       <Position9>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="19" Column="129"/>
+        <Caret Line="8" Column="20"/>
       </Position9>
       <Position10>
-        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="8" Column="20"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="17" Column="18"/>
       </Position10>
       <Position11>
         <Filename Value="main.pas"/>
-        <Caret Line="17" Column="18"/>
       </Position11>
       <Position12>
         <Filename Value="main.pas"/>
+        <Caret Line="17" Column="32"/>
       </Position12>
       <Position13>
         <Filename Value="main.pas"/>
-        <Caret Line="17" Column="32"/>
+        <Caret Line="40" Column="32" TopLine="2"/>
       </Position13>
       <Position14>
         <Filename Value="main.pas"/>
-        <Caret Line="40" Column="32" TopLine="2"/>
+        <Caret Line="45" Column="16" TopLine="7"/>
       </Position14>
       <Position15>
-        <Filename Value="main.pas"/>
-        <Caret Line="45" Column="16" TopLine="7"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="625" Column="74" TopLine="290"/>
       </Position15>
       <Position16>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="625" Column="74" TopLine="290"/>
       </Position16>
       <Position17>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="149" Column="22" TopLine="112"/>
       </Position17>
       <Position18>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="149" Column="22" TopLine="112"/>
+        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
+        <Caret Line="8" Column="5"/>
       </Position18>
       <Position19>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="8" Column="5"/>
+        <Caret Line="23" Column="7"/>
       </Position19>
       <Position20>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="23" Column="7"/>
+        <Caret Line="8" Column="22"/>
       </Position20>
       <Position21>
-        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="8" Column="22"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="185" Column="57" TopLine="143"/>
       </Position21>
       <Position22>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="185" Column="57" TopLine="143"/>
+        <Caret Line="111" Column="85" TopLine="89"/>
       </Position22>
       <Position23>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="111" Column="85" TopLine="89"/>
+        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
+        <Caret Line="29" Column="55" TopLine="18"/>
       </Position23>
       <Position24>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="29" Column="55" TopLine="18"/>
+        <Caret Line="115" TopLine="102"/>
       </Position24>
       <Position25>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="115" TopLine="102"/>
+        <Caret Line="29" Column="38" TopLine="6"/>
       </Position25>
       <Position26>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="29" Column="38" TopLine="6"/>
+        <Caret Line="145" Column="57" TopLine="104"/>
       </Position26>
       <Position27>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="145" Column="57" TopLine="104"/>
+        <Caret Line="117" TopLine="115"/>
       </Position27>
       <Position28>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="117" TopLine="115"/>
+        <Caret Line="175" TopLine="130"/>
       </Position28>
       <Position29>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="175" TopLine="130"/>
+        <Caret Line="57" Column="82"/>
       </Position29>
     </JumpHistory>
   </ProjectSession>
