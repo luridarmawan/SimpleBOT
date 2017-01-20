@@ -320,17 +320,17 @@
       </Unit45>
       <Unit46>
         <Filename Value="../../SimpleAI/src/controller/jadwalsholat_controller.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <CursorPos Y="21"/>
+        <CursorPos X="64" Y="29"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit46>
       <Unit47>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="52"/>
-        <CursorPos X="44" Y="91"/>
+        <CursorPos X="82" Y="57"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit47>

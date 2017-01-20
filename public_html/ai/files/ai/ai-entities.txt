@@ -25,8 +25,9 @@ kakak=kk
 
 [HalTerlarang]
 narkoba=ganja|inex|narkoba|morfin|candu
-miras=bir
+miras=bir|wiski|vodka
 mabuk=mabuk|mabok
+sex=kentu|ngentot|ml|sex|homo|lesbian|lesbi
 
 [Keadaan]
 baik=baik|sehat|alhamdulillah

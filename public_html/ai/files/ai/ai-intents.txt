@@ -54,6 +54,7 @@ say=(suggest|saran|teach) @answer: @question
 action=jadwal_sholat
 say=(jadwal|jadual) sholat (untuk|utk|kota) @kota
 say=(jadwal|jadual) sholat @kota
+say=(jadwal|jadual) sholat
 
 [Lahir]
 object=lahir
