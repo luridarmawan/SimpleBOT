@@ -22,7 +22,7 @@ type
 
     function isTelegram: boolean;
     function isTelegramGroup: boolean;
-    function isMentioned( Text: string): boolean;
+    function isMentioned(Text: string): boolean;
   public
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
@@ -91,13 +91,13 @@ begin
   // maybe submitted from post data
   if Text = '' then
     Text := _POST['text'];
-  if Text = '' then       ----<<
+  if Text = '' then
     Exit;
 
   if isTelegram then
     //if isTelegramGroup then
-    if ((chatType = 'group')or(chatType = 'supergroup')) then
-      if not isMentioned( Text) then
+    if ((chatType = 'group') or (chatType = 'supergroup')) then
+      if not isMentioned(Text) then
       begin
         Exit;
       end;
@@ -132,7 +132,7 @@ begin
         SimpleBOT.SimpleAI.ResponseText[i]);
     end;
 
-    LogUtil.Add( Request.Content, 'input');
+    LogUtil.Add(Request.Content, 'input');
 
     Response.Content := 'OK';
     Exit;
@@ -181,8 +181,8 @@ end;
 
 function TMainModule.isTelegramGroup: boolean;
 var
-  json : TJSONUtil;
-  chatType : string;
+  json: TJSONUtil;
+  chatType: string;
 begin
   Result := False;
   json := TJSONUtil.Create;
@@ -201,7 +201,7 @@ end;
 function TMainModule.isMentioned(Text: string): boolean;
 begin
   Result := False;
-  if pos( '@'+BOTNAME_DEFAULT, Text) > 0 then
+  if pos('@' + BOTNAME_DEFAULT, Text) > 0 then
   begin
     Result := True;
   end;

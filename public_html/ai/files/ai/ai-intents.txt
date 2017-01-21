@@ -42,6 +42,11 @@ say=capek (ahh|deh)
 action=telegram_menu
 say=/start
 
+[Kamus]
+action=kamus
+say=@word artinya
+say=(artinya|arti|maksud) @word
+
 [xxxx]
 say=xxx
 
