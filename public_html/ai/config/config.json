@@ -45,6 +45,9 @@
   "telegram": {
     "token": "217792689:AAEQlajK1_ERu-h38ZZr1_hStamWgBhydN0"
   },
+  "ibacor": {
+    "token": ""
+  },
   "database": {
     "default": {
       "driver": "MySQL 5.5",

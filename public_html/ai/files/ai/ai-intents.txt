@@ -45,7 +45,9 @@ say=/start
 [Kamus]
 action=kamus
 say=@word artinya
-say=(artinya|arti|maksud) @word
+say=@word adalah
+say=(artinya|arti|maksud|maksudnya) @word itu
+say=(artinya|arti|maksud|maksudnya) @word
 
 [xxxx]
 say=xxx
