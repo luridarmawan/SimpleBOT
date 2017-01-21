@@ -67,8 +67,10 @@ var
   json: TJSONUtil;
   text_response: string;
   Text, chatID, chatType, messageID, fullName, userName, telegramToken: string;
-  i: integer;
+  i : integer;
+  updateID, lastUpdateID: LongInt;
 begin
+  updateID := 0;
 
   // telegram style
   //   {"message":{"message_id":0,"text":"Hi","chat":{"id":0}}}
@@ -78,6 +80,7 @@ begin
     Text := json['message/text'];
     if Text = 'False' then
       Text := '';
+    updateID := s2i( json['update_id']);
     messageID := json['message/message_id'];
     chatID := json['message/chat/id'];
     chatType := json['message/chat/type'];
@@ -95,12 +98,23 @@ begin
     Exit;
 
   if isTelegram then
+  begin
     //if isTelegramGroup then
     if ((chatType = 'group') or (chatType = 'supergroup')) then
       if not isMentioned(Text) then
       begin
         Exit;
       end;
+
+    // last message only
+    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
+    if updateID < lastUpdateID then
+    begin
+      Exit;
+    end;
+    _SESSION['UPDATE_ID'] := updateID;
+
+  end;
 
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;
