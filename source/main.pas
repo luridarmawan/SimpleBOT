@@ -91,10 +91,12 @@ begin
   // maybe submitted from post data
   if Text = '' then
     Text := _POST['text'];
+  if Text = '' then       ----<<
+    Exit;
 
   if isTelegram then
     //if isTelegramGroup then
-    if chatType = 'group' then
+    if ((chatType = 'group')or(chatType = 'supergroup')) then
       if not isMentioned( Text) then
       begin
         Exit;
@@ -188,6 +190,8 @@ begin
     json.LoadFromJsonString(Request.Content);
     chatType := json['message/chat/type'];
     if chatType = 'group' then
+      Result := True;
+    if chatType = 'supergroup' then
       Result := True;
   except
   end;
