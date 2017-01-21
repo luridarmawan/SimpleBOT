@@ -210,6 +210,7 @@ dist
 
 public_html/ztemp/cache/*
 public_html/ai/ztemp/cache/domains/*
+public_html/ai/ztemp/cache/jadwalsholat/*
 public_html/ztemp/error_log/*
 public_html/ztemp/sessions/*
 

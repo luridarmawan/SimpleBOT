@@ -8,6 +8,9 @@ uses
   simplebot_controller, logutil_lib, fpjson,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
+const
+  BOTNAME_DEFAULT = 'bot';
+
 type
 
   { TMainModule }
@@ -16,7 +19,10 @@ type
   private
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
     function defineHandler(const IntentName: string; Params: TStrings): string;
+
     function isTelegram: boolean;
+    function isTelegramGroup: boolean;
+    function isMentioned( Text: string): boolean;
   public
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
@@ -60,7 +66,7 @@ procedure TMainModule.Post;
 var
   json: TJSONUtil;
   text_response: string;
-  Text, chatID, messageID, fullName, userName, telegramToken: string;
+  Text, chatID, chatType, messageID, fullName, userName, telegramToken: string;
   i: integer;
 begin
 
@@ -74,6 +80,7 @@ begin
       Text := '';
     messageID := json['message/message_id'];
     chatID := json['message/chat/id'];
+    chatType := json['message/chat/type'];
     userName := json['message/chat/username'];
     fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
   except
@@ -85,6 +92,13 @@ begin
   if Text = '' then
     Text := _POST['text'];
 
+  if isTelegram then
+    //if isTelegramGroup then
+    if chatType = 'group' then
+      if not isMentioned( Text) then
+      begin
+        Exit;
+      end;
 
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;
@@ -161,6 +175,32 @@ begin
   Result := False;
   if _GET['telegram'] = '1' then
     Result := True;
+end;
+
+function TMainModule.isTelegramGroup: boolean;
+var
+  json : TJSONUtil;
+  chatType : string;
+begin
+  Result := False;
+  json := TJSONUtil.Create;
+  try
+    json.LoadFromJsonString(Request.Content);
+    chatType := json['message/chat/type'];
+    if chatType = 'group' then
+      Result := True;
+  except
+  end;
+  json.Free;
+end;
+
+function TMainModule.isMentioned(Text: string): boolean;
+begin
+  Result := False;
+  if pos( '@'+BOTNAME_DEFAULT, Text) > 0 then
+  begin
+    Result := True;
+  end;
 end;
 
 function TMainModule.OnErrorHandler(const Message: string): string;
