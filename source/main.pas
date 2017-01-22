@@ -4,6 +4,7 @@ unit main;
 
 interface
 
+//TODO: Recorder
 uses
   simplebot_controller, logutil_lib, fpjson,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
@@ -84,6 +85,7 @@ begin
     messageID := json['message/message_id'];
     chatID := json['message/chat/id'];
     chatType := json['message/chat/type'];
+    //TODO: get full name from field 'message/from/first_name'
     userName := json['message/chat/username'];
     fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
   except
@@ -106,6 +108,8 @@ begin
         Exit;
       end;
 
+    //TODO: check is reply from groupchat
+
     // last message only
     lastUpdateID := s2i( _SESSION['UPDATE_ID']);
     if updateID < lastUpdateID then
@@ -113,8 +117,7 @@ begin
       Exit;
     end;
     _SESSION['UPDATE_ID'] := updateID;
-
-  end;
+  end;// isTelegram
 
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;
@@ -216,9 +219,9 @@ function TMainModule.isMentioned(Text: string): boolean;
 begin
   Result := False;
   if pos('@' + BOTNAME_DEFAULT, Text) > 0 then
-  begin
     Result := True;
-  end;
+  if pos('Bot', Text) > 0 then    // force dectect as Bot  (____Bot)
+    Result := True;
 end;
 
 function TMainModule.OnErrorHandler(const Message: string): string;

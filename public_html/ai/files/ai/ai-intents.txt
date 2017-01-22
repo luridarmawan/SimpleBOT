@@ -45,7 +45,6 @@ say=/start
 [Kamus]
 action=kamus
 say=@word artinya
-say=@word adalah
 say=(artinya|arti|maksud|maksudnya) @word itu
 say=(artinya|arti|maksud|maksudnya) @word
 
@@ -134,8 +133,9 @@ say=how are u
 say=how r you
 say=@Waktu:waktu
 
-[Salam]
-say=@Salam
+[SalamMuslim]
+say=@SalamMuslim
+say=@SalamArabic
 
 [Perpisahan]
 say=selamat tinggal
