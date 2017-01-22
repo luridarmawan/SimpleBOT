@@ -48,6 +48,9 @@
   "ibacor": {
     "token": ""
   },
+  "cariks": {
+    "path": "files/carik/"
+  },
   "database": {
     "default": {
       "driver": "MySQL 5.5",

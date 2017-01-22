@@ -290,6 +290,15 @@ say=xxxxxx
 say=sarannya kami simpan, terima kasih.
 say=Terima kasih masukannya
 
+[CarikStart]
+say=tunggu sebentar ...
+say=... bentar yaa ...
+
+[CarikStop]
+say=Oke, siippp...
+say=Yak
+say=Siap 
+
 [Lahir]
 say=belum lama
 say=baru-baru saja siihh...

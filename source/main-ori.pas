@@ -6,7 +6,6 @@ interface
 
 //TODO: Recorder
 uses
-  carik_controller,
   simplebot_controller, logutil_lib, fpjson,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
@@ -26,7 +25,6 @@ type
     function isTelegramGroup: boolean;
     function isMentioned(Text: string): boolean;
   public
-    Carik : TCarikController;
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
     destructor Destroy; override;
@@ -44,13 +42,10 @@ constructor TMainModule.CreateNew(AOwner: TComponent; CreateMode: integer);
 begin
   inherited CreateNew(AOwner, CreateMode);
   BeforeRequest := @BeforeRequestHandler;
-
-  Carik := TCarikController.Create;
 end;
 
 destructor TMainModule.Destroy;
 begin
-  Carik.Free;
   inherited Destroy;
 end;
 
@@ -101,20 +96,6 @@ begin
   // maybe submitted from post data
   if Text = '' then
     Text := _POST['text'];
-
-  // CarikBOT isRecording
-  Carik.GroupName := json['message/chat/title'];
-  if isTelegram then
-  begin
-    if ((chatType = 'group') or (chatType = 'supergroup')) then
-    begin
-      if Carik.Recording then
-      begin
-        Carik.RecordTelegramMessage( Request.Content);
-      end;
-    end;
-  end; // Carik - end
-
   if Text = '' then
     Exit;
 
@@ -147,8 +128,6 @@ begin
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
-  SimpleBOT.Handler['carik_rekam'] := @Carik.CarikHandler;
-  SimpleBOT.Handler['carik_stop'] := @Carik.CarikHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
