@@ -115,9 +115,6 @@ begin
     end;
   end; // Carik - end
 
-  if Text = '' then
-    Exit;
-
   if isTelegram then
   begin
     LogUtil.Add(Request.Content, 'input');
@@ -141,6 +138,9 @@ begin
     //TODO: check if reply from groupchat
 
   end;// isTelegram
+
+  if Text = '' then
+    Exit;
 
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;

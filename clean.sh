@@ -25,3 +25,5 @@ find . -type d -name backup -exec rm -rf "{}" +
 
 mkdir lib
 touch lib/index.html
+mkdir source/lib
+touch source/lib/index.html
