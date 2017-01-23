@@ -5,7 +5,6 @@ rm -rf *.exe
 rm -rf *.ppu
 rm -rf *.o
 rm -rf *.compiled
-rm -rf lib/*
 rm -rf public_html/ai/files/carik/carik.dat
 rm -rf public_html/ai/files/carik/group*
 
@@ -23,3 +22,6 @@ find . -type f -name *.compiled -delete
 find . -type f -name .DS_Store -delete
 find . -type d -name lib -exec rm -rf "{}" +
 find . -type d -name backup -exec rm -rf "{}" +
+
+mkdir lib
+touch lib/index.html
