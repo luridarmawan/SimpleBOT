@@ -8,6 +8,7 @@ interface
 uses
   carik_controller,
   simplebot_controller, logutil_lib, fpjson,
+  Crt,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
 
 const
@@ -74,7 +75,7 @@ var
   jsonData: TJSONData;
   s, text_response: string;
   Text, chatID, chatType, messageID, fullName, userName, telegramToken: string;
-  i: integer;
+  i, j: integer;
   x, updateID, lastUpdateID: longint;
 begin
   updateID := 0;
@@ -105,7 +106,10 @@ begin
     Text := _POST['text'];
 
   // CarikBOT isRecording
-  Carik.GroupName := jsonData.GetPath('message.chat.title').AsString;
+  try
+    Carik.GroupName := jsonData.GetPath('message.chat.title').AsString;
+  except
+  end;
   if isTelegram then
   begin
     if ((chatType = 'group') or (chatType = 'supergroup')) then
@@ -122,7 +126,7 @@ begin
     LogUtil.Add(Request.Content, 'input');
     // last message only
     lastUpdateID := s2i(_SESSION['UPDATE_ID']);
-    if updateID <= lastUpdateID then
+    if updateID < lastUpdateID then
     begin
       Exit;
     end;
@@ -170,13 +174,18 @@ begin
       messageID := '';
     if SimpleBOT.SimpleAI.Action = 'telegram_menu' then
       messageID := '';
-    for i := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
+    SimpleBOT.SimpleAI.ResponseText.Add('');
+    for j := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
-      if i > 0 then
-        messageID := '';
-      if SimpleBOT.SimpleAI.ResponseText[i] <> '' then
-        SimpleBOT.TelegramSend(telegramToken, chatID, messageID,
-          SimpleBOT.SimpleAI.ResponseText[i]);
+      //if i > 0 then
+      //  messageID := '';
+      try
+        s := SimpleBOT.SimpleAI.ResponseText[j];
+        if s <> '' then
+          SimpleBOT.TelegramSend(telegramToken, chatID, messageID, s);
+        Delay(200);
+      except
+      end;
     end;
 
     Response.Content := 'OK';

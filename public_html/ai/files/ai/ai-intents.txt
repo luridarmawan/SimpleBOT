@@ -58,7 +58,7 @@ say=(suggest|saran|teach) @answer: @question
 
 [CarikStart]
 action=carik_start
-say=(rekam|catat|mulai) (kulwap|obrolan|diskusi|rapat|rekaman|catatan|catat)
+say=(rekam|catat|catet|mulai) (kulwap|obrolan|diskusi|rapat|rekaman|catatan|catat|notulen)
 say=(rekam|rekaman|notulen) (mulai|dimulai|start)
 say=(mulai|start) (rekam|rekaman|notulen|catatan)
 
