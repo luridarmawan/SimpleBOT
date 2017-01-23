@@ -5,9 +5,6 @@ rm -rf *.exe
 rm -rf *.ppu
 rm -rf *.o
 rm -rf *.compiled
-rm -rf lib/*
-mkdir lib
-touch lib/index.html
 
 find . -type f -name *.~ -delete
 find . -type f -name *.o -delete
@@ -22,3 +19,6 @@ find . -type f -name *.compiled -delete
 find . -type f -name .DS_Store -delete
 find . -type d -name lib -exec rm -rf "{}" +
 find . -type d -name backup -exec rm -rf "{}" +
+
+mkdir lib
+touch lib/index.html

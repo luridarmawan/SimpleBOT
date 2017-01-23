@@ -120,23 +120,26 @@ begin
 
   if isTelegram then
   begin
-    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
-    //if isTelegramGroup then
-    if ((chatType = 'group') or (chatType = 'supergroup')) then
-      if not isMentioned(Text) then
-      begin
-        Response.Content := 'nop';
-        Exit;
-      end;
-
-    //TODO: check is reply from groupchat
-
+    LogUtil.Add(Request.Content, 'input');
     // last message only
+    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
     if updateID < lastUpdateID then
     begin
       Exit;
     end;
     _SESSION['UPDATE_ID'] := updateID;
+
+    //if isTelegramGroup then
+    if ((chatType = 'group') or (chatType = 'supergroup')) then
+      if not isMentioned(Text) then
+      begin
+        _SESSION['UPDATE_ID'] := updateID;
+        Response.Content := 'nop';
+        Exit;
+      end;
+
+    //TODO: check if reply from groupchat
+
   end;// isTelegram
 
   SimpleBOT := TSimpleBotModule.Create;
@@ -148,7 +151,7 @@ begin
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
-  SimpleBOT.Handler['carik_rekam'] := @Carik.CarikHandler;
+  SimpleBOT.Handler['carik_start'] := @Carik.CarikHandler;
   SimpleBOT.Handler['carik_stop'] := @Carik.CarikHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
@@ -171,10 +174,8 @@ begin
         SimpleBOT.SimpleAI.ResponseText[i]);
     end;
 
-    LogUtil.Add(Request.Content, 'input');
-
-    //Response.Content := 'OK';
-    //Exit;
+    Response.Content := 'OK';
+    Exit;
   end;
 
   //---

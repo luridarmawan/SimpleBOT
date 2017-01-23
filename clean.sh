@@ -7,7 +7,7 @@ rm -rf *.o
 rm -rf *.compiled
 rm -rf lib/*
 rm -rf public_html/ai/files/carik/carik.dat
-sudo rm -rf public_html/ai/files/carik/group*
+rm -rf public_html/ai/files/carik/group*
 
 find . -type f -name *.~ -delete
 find . -type f -name *.o -delete
