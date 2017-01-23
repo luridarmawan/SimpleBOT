@@ -84,7 +84,10 @@ begin
   //   {"message":{"message_id":0,"text":"Hi","chat":{"id":0}}}
   try
     jsonData := GetJSON(Request.Content);
-    Text := jsonData.GetPath('message.text').AsString;
+    try
+      Text := jsonData.GetPath('message.text').AsString;
+    except
+    end;
     if Text = 'False' then
       Text := '';
     updateID := jsonData.GetPath('update_id').AsInteger;
@@ -151,6 +154,7 @@ begin
   if Text = '' then
     Exit;
 
+  // Main AI BOT
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;
   if userName <> '' then
