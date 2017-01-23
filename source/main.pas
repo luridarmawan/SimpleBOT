@@ -120,6 +120,7 @@ begin
 
   if isTelegram then
   begin
+    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
     //if isTelegramGroup then
     if ((chatType = 'group') or (chatType = 'supergroup')) then
       if not isMentioned(Text) then
@@ -131,7 +132,6 @@ begin
     //TODO: check is reply from groupchat
 
     // last message only
-    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
     if updateID < lastUpdateID then
     begin
       Exit;
