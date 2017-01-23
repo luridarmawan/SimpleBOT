@@ -48,8 +48,16 @@
   "ibacor": {
     "token": ""
   },
-  "cariks": {
-    "path": "files/carik/"
+  "carik": {
+    "path": "files/carik/",
+    "groups" : {
+      "SuperGroupTest" : {
+        "admin": "luridarmawan,seseorang"
+      },
+      "GroupTest" : {
+        "admin": "luridarmawan,seseorang"
+      }
+    }
   },
   "database": {
     "default": {

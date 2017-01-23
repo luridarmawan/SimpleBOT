@@ -20,6 +20,7 @@ type
 
   TMainModule = class(TMyCustomWebModule)
   private
+    jsonData: TJSONData;
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
     function defineHandler(const IntentName: string; Params: TStrings): string;
 
@@ -72,7 +73,6 @@ end;
 //   curl "http://local-bot.fastplaz.com/ai/" -X POST -d '{"message":{"message_id":0,"chat":{"id":0},"text":"Hi"}}'
 procedure TMainModule.Post;
 var
-  jsonData: TJSONData;
   s, text_response: string;
   Text, chatID, chatType, messageID, fullName, userName, telegramToken: string;
   i, j: integer;
@@ -91,11 +91,10 @@ begin
     messageID := jsonData.GetPath('message.message_id').AsString;
     chatID := jsonData.GetPath('message.chat.id').AsString;
     chatType := jsonData.GetPath('message.chat.type').AsString;
-    //TODO: get full name from field 'message/from/first_name'
     try
-      userName := jsonData.GetPath('message.chat.username').AsString;
-      fullName := jsonData.GetPath('message.chat.first_name').AsString +
-        ' ' + jsonData.GetPath('message.chat.last_name').AsString;
+      userName := jsonData.GetPath('message.from.username').AsString;
+      fullName := jsonData.GetPath('message.from.first_name').AsString +
+        ' ' + jsonData.GetPath('message.from.last_name').AsString;
     except
     end;
   except
@@ -106,6 +105,7 @@ begin
     Text := _POST['text'];
 
   // CarikBOT isRecording
+  Carik.UserName := userName;
   try
     Carik.GroupName := jsonData.GetPath('message.chat.title').AsString;
   except
@@ -160,8 +160,8 @@ begin
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
-  SimpleBOT.Handler['carik_start'] := @Carik.CarikHandler;
-  SimpleBOT.Handler['carik_stop'] := @Carik.CarikHandler;
+  SimpleBOT.Handler['carik_start'] := @Carik.CarikStartHandler;
+  SimpleBOT.Handler['carik_stop'] := @Carik.CarikStopHandler;
   text_response := SimpleBOT.Exec(Text);
   SimpleBOT.Free;
 
@@ -189,7 +189,7 @@ begin
     end;
 
     Response.Content := 'OK';
-    Exit;
+    //Exit;
   end;
 
   //---
