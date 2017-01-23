@@ -208,6 +208,8 @@ dist
 *.ppu
 *.o
 
+public_html/ai/files/carik/*html
+public_html/ai/files/carik/*dat
 public_html/ztemp/cache/*
 public_html/ai/ztemp/cache/domains/*
 public_html/ai/ztemp/cache/jadwalsholat/*

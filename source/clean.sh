@@ -6,6 +6,8 @@ rm -rf *.ppu
 rm -rf *.o
 rm -rf *.compiled
 rm -rf lib/*
+mkdir lib
+touch lib/index.html
 
 find . -type f -name *.~ -delete
 find . -type f -name *.o -delete

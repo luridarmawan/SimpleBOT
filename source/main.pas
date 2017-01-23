@@ -124,6 +124,7 @@ begin
     if ((chatType = 'group') or (chatType = 'supergroup')) then
       if not isMentioned(Text) then
       begin
+        Response.Content := 'nop';
         Exit;
       end;
 
@@ -172,8 +173,8 @@ begin
 
     LogUtil.Add(Request.Content, 'input');
 
-    Response.Content := 'OK';
-    Exit;
+    //Response.Content := 'OK';
+    //Exit;
   end;
 
   //---

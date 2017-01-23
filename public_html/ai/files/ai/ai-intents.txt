@@ -44,9 +44,9 @@ say=/start
 
 [Kamus]
 action=kamus
-say=@word artinya
-say=(artinya|arti|maksud|maksudnya) @word itu
-say=(artinya|arti|maksud|maksudnya) @word
+say=@word (artinya|maksudnya)
+say=(artinya|arti|maksud|maksudnya|kamus) @word itu
+say=(artinya|arti|maksud|maksudnya|kamus) @word
 
 [xxxx]
 say=xxx
@@ -58,7 +58,7 @@ say=(suggest|saran|teach) @answer: @question
 
 [CarikStart]
 action=carik_rekam
-say=(rekam|catat) (kulwap|obrolan|diskusi|rapat)
+say=(rekam|catat) (kulwap|obrolan|diskusi|rapat|rekaman)
 say=(rekam|rekaman|notulen) (mulai|dimulai|start)
 say=(mulai|start) (rekam|rekaman|notulen)
 

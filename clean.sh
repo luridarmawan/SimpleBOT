@@ -6,6 +6,7 @@ rm -rf *.ppu
 rm -rf *.o
 rm -rf *.compiled
 rm -rf lib/*
+rm -rf public_html/ai/files/carik/*html
 
 find . -type f -name *.~ -delete
 find . -type f -name *.o -delete
@@ -16,6 +17,7 @@ find . -type f -name *.bak -delete
 find . -type f -name *.ppu -delete
 find . -type f -name *.log -delete
 find . -type f -name *.ses -delete
+find . -type f -name *.dat -delete
 find . -type f -name *.compiled -delete
 find . -type f -name .DS_Store -delete
 find . -type d -name lib -exec rm -rf "{}" +
