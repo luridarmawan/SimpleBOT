@@ -25,8 +25,9 @@ type
     function isTelegram: boolean;
     function isTelegramGroup: boolean;
     function isMentioned(Text: string): boolean;
+    function isReply: boolean;
   public
-    Carik : TCarikController;
+    Carik: TCarikController;
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
     destructor Destroy; override;
@@ -70,32 +71,33 @@ end;
 //   curl "http://local-bot.fastplaz.com/ai/" -X POST -d '{"message":{"message_id":0,"chat":{"id":0},"text":"Hi"}}'
 procedure TMainModule.Post;
 var
-  json: TJSONUtil;
-  text_response: string;
+  jsonData: TJSONData;
+  s, text_response: string;
   Text, chatID, chatType, messageID, fullName, userName, telegramToken: string;
-  i : integer;
-  updateID, lastUpdateID: LongInt;
+  i: integer;
+  x, updateID, lastUpdateID: longint;
 begin
   updateID := 0;
 
   // telegram style
   //   {"message":{"message_id":0,"text":"Hi","chat":{"id":0}}}
-  json := TJSONUtil.Create;
   try
-    json.LoadFromJsonString(Request.Content);
-    Text := json['message/text'];
+    jsonData := GetJSON(Request.Content);
+    Text := jsonData.GetPath('message.text').AsString;
     if Text = 'False' then
       Text := '';
-    updateID := s2i( json['update_id']);
-    messageID := json['message/message_id'];
-    chatID := json['message/chat/id'];
-    chatType := json['message/chat/type'];
+    updateID := jsonData.GetPath('update_id').AsInteger;
+    messageID := jsonData.GetPath('message.message_id').AsString;
+    chatID := jsonData.GetPath('message.chat.id').AsString;
+    chatType := jsonData.GetPath('message.chat.type').AsString;
     //TODO: get full name from field 'message/from/first_name'
-    userName := json['message/chat/username'];
-    fullName := json['message/chat/first_name'] + ' ' + json['message/chat/last_name'];
+    try
+      userName := jsonData.GetPath('message.chat.username').AsString;
+      fullName := jsonData.GetPath('message.chat.first_name').AsString +
+        ' ' + jsonData.GetPath('message.chat.last_name').AsString;
+    except
+    end;
   except
-    // jika tidak ada di body, ambil dari parameter post
-    Text := _POST['text'];
   end;
 
   // maybe submitted from post data
@@ -103,14 +105,14 @@ begin
     Text := _POST['text'];
 
   // CarikBOT isRecording
-  Carik.GroupName := json['message/chat/title'];
+  Carik.GroupName := jsonData.GetPath('message.chat.title').AsString;
   if isTelegram then
   begin
     if ((chatType = 'group') or (chatType = 'supergroup')) then
     begin
       if Carik.Recording then
       begin
-        Carik.RecordTelegramMessage( Request.Content);
+        Carik.RecordTelegramMessage(Request.Content);
       end;
     end;
   end; // Carik - end
@@ -119,8 +121,8 @@ begin
   begin
     LogUtil.Add(Request.Content, 'input');
     // last message only
-    lastUpdateID := s2i( _SESSION['UPDATE_ID']);
-    if updateID <= lastUpdateID then
+    lastUpdateID := s2i(_SESSION['UPDATE_ID']);
+    if updateID < lastUpdateID then
     begin
       Exit;
     end;
@@ -128,14 +130,17 @@ begin
 
     //if isTelegramGroup then
     if ((chatType = 'group') or (chatType = 'supergroup')) then
-      if not isMentioned(Text) then
+    begin
+      if not isReply then
       begin
-        _SESSION['UPDATE_ID'] := updateID;
-        Response.Content := 'nop';
-        Exit;
+        if (not isMentioned(Text)) then
+        begin
+          _SESSION['UPDATE_ID'] := updateID;
+          Response.Content := 'nop';
+          Exit;
+        end;
       end;
-
-    //TODO: check if reply from groupchat
+    end;
 
   end;// isTelegram
 
@@ -169,9 +174,9 @@ begin
     begin
       if i > 0 then
         messageID := '';
-      SimpleBOT.TelegramSend(telegramToken,
-        chatID, messageID,
-        SimpleBOT.SimpleAI.ResponseText[i]);
+      if SimpleBOT.SimpleAI.ResponseText[i] <> '' then
+        SimpleBOT.TelegramSend(telegramToken, chatID, messageID,
+          SimpleBOT.SimpleAI.ResponseText[i]);
     end;
 
     Response.Content := 'OK';
@@ -245,6 +250,23 @@ begin
     Result := True;
   if pos('Bot', Text) > 0 then    // force dectect as Bot  (____Bot)
     Result := True;
+end;
+
+function TMainModule.isReply: boolean;
+var
+  json: TJSONUtil;
+  s: string;
+begin
+  Result := False;
+  json := TJSONUtil.Create;
+  try
+    json.LoadFromJsonString(Request.Content);
+    s := json['message/reply_to_message/from/username'];
+    if pos('Bot', s) > 0 then
+      Result := True;
+  except
+  end;
+
 end;
 
 function TMainModule.OnErrorHandler(const Message: string): string;
