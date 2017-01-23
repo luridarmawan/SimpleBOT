@@ -123,7 +123,7 @@ begin
     LogUtil.Add(Request.Content, 'input');
     // last message only
     lastUpdateID := s2i( _SESSION['UPDATE_ID']);
-    if updateID < lastUpdateID then
+    if updateID <= lastUpdateID then
     begin
       Exit;
     end;
