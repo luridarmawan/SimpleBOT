@@ -126,7 +126,8 @@ begin
 
   if isTelegram then
   begin
-    LogUtil.Add(Request.Content, 'input');
+    if AppData.debug then
+      LogUtil.Add(Request.Content, 'input');
     // last message only
     lastUpdateID := s2i(_SESSION['UPDATE_ID']);
     if updateID < lastUpdateID then

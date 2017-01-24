@@ -21,8 +21,8 @@
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="150"/>
-        <CursorPos X="17" Y="157"/>
+        <TopLine Value="92"/>
+        <CursorPos X="57" Y="131"/>
         <UsageCount Value="109"/>
         <Loaded Value="True"/>
       </Unit2>
@@ -275,8 +275,8 @@
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="5"/>
-        <TopLine Value="187"/>
-        <CursorPos Y="212"/>
+        <TopLine Value="321"/>
+        <CursorPos X="38" Y="363"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
       </Unit39>
@@ -334,8 +334,8 @@
       <Unit47>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="48"/>
-        <CursorPos X="24" Y="76"/>
+        <TopLine Value="56"/>
+        <CursorPos X="21" Y="61"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit47>
@@ -371,124 +371,122 @@
     </OtherDefines>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="214" Column="24" TopLine="176"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
+        <Caret Line="54" Column="62" TopLine="26"/>
       </Position1>
       <Position2>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="504" TopLine="489"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
+        <Caret Line="76" Column="15" TopLine="58"/>
       </Position2>
       <Position3>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="94" Column="37" TopLine="69"/>
+        <Caret Line="349" TopLine="306"/>
       </Position3>
       <Position4>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="93" Column="14" TopLine="70"/>
+        <Caret Line="89" Column="23" TopLine="68"/>
       </Position4>
       <Position5>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="337" Column="18" TopLine="296"/>
+        <Caret Line="327" Column="15" TopLine="305"/>
       </Position5>
       <Position6>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="93" Column="14" TopLine="71"/>
+        <Caret Line="89" Column="34" TopLine="68"/>
       </Position6>
       <Position7>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="48" Column="35" TopLine="26"/>
+        <Caret Line="322" Column="62" TopLine="277"/>
       </Position7>
       <Position8>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="54" Column="62" TopLine="26"/>
+        <Caret Line="91" Column="54" TopLine="69"/>
       </Position8>
       <Position9>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="76" Column="15" TopLine="58"/>
+        <Caret Line="36" Column="23" TopLine="9"/>
       </Position9>
       <Position10>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="349" TopLine="306"/>
+        <Caret Line="340" Column="13" TopLine="315"/>
       </Position10>
       <Position11>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="89" Column="23" TopLine="68"/>
+        <Caret Line="208" TopLine="185"/>
       </Position11>
       <Position12>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="327" Column="15" TopLine="305"/>
+        <Caret Line="331" Column="6" TopLine="306"/>
       </Position12>
       <Position13>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="89" Column="34" TopLine="68"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
+        <Caret Line="569" Column="69" TopLine="543"/>
       </Position13>
       <Position14>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="322" Column="62" TopLine="277"/>
+        <Caret Line="326" TopLine="303"/>
       </Position14>
       <Position15>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="91" Column="54" TopLine="69"/>
+        <Caret Line="339" Column="15" TopLine="294"/>
       </Position15>
       <Position16>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="36" Column="23" TopLine="9"/>
+        <Caret Line="211" TopLine="182"/>
       </Position16>
       <Position17>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="340" Column="13" TopLine="315"/>
+        <Caret Line="339" TopLine="306"/>
       </Position17>
       <Position18>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="208" TopLine="185"/>
+        <Caret Line="220" TopLine="201"/>
       </Position18>
       <Position19>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="331" Column="6" TopLine="306"/>
+        <Caret Line="212" Column="37" TopLine="187"/>
       </Position19>
       <Position20>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
-        <Caret Line="569" Column="69" TopLine="543"/>
+        <Filename Value="../../SimpleAI/src/controller/carik_controller.pas"/>
+        <Caret Line="283" Column="40" TopLine="252"/>
       </Position20>
       <Position21>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="326" TopLine="303"/>
+        <Caret Line="210" TopLine="184"/>
       </Position21>
       <Position22>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="339" Column="15" TopLine="294"/>
+        <Caret Line="36" Column="27" TopLine="11"/>
       </Position22>
       <Position23>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="211" TopLine="182"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="157" Column="17" TopLine="150"/>
       </Position23>
       <Position24>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="339" TopLine="306"/>
+        <Filename Value="main.pas"/>
       </Position24>
       <Position25>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="210" Column="26" TopLine="242"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="10" Column="28"/>
       </Position25>
       <Position26>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="220" TopLine="201"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="130" TopLine="92"/>
       </Position26>
       <Position27>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="212" Column="37" TopLine="187"/>
+        <Filename Value="main.pas"/>
       </Position27>
       <Position28>
-        <Filename Value="../../SimpleAI/src/controller/carik_controller.pas"/>
-        <Caret Line="283" Column="40" TopLine="252"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="129" Column="21" TopLine="92"/>
       </Position28>
       <Position29>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="210" TopLine="184"/>
+        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
+        <Caret Line="61" Column="21" TopLine="56"/>
       </Position29>
       <Position30>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="36" Column="27" TopLine="11"/>
+        <Caret Line="93" Column="14" TopLine="72"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
