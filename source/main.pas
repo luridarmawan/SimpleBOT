@@ -6,7 +6,7 @@ interface
 
 //TODO: Recorder
 uses
-  carik_controller,
+  notulen_controller,
   simplebot_controller, logutil_lib, fpjson,
   Crt,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
@@ -29,7 +29,7 @@ type
     function isMentioned(Text: string): boolean;
     function isReply: boolean;
   public
-    Carik: TCarikController;
+    Carik: TNotulenController;
     SimpleBOT: TSimpleBotModule;
     constructor CreateNew(AOwner: TComponent; CreateMode: integer); override;
     destructor Destroy; override;
@@ -48,7 +48,7 @@ begin
   inherited CreateNew(AOwner, CreateMode);
   BeforeRequest := @BeforeRequestHandler;
 
-  Carik := TCarikController.Create;
+  Carik := TNotulenController.Create;
 end;
 
 destructor TMainModule.Destroy;
