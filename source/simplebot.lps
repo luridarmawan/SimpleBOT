@@ -3,27 +3,28 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="52">
+    <Units Count="54">
       <Unit0>
         <Filename Value="simplebot.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="54" Y="25"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="137"/>
       </Unit0>
       <Unit1>
         <Filename Value="routes.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="16"/>
-        <UsageCount Value="109"/>
+        <UsageCount Value="137"/>
       </Unit1>
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="92"/>
-        <CursorPos X="57" Y="131"/>
-        <UsageCount Value="109"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="164"/>
+        <CursorPos X="11" Y="191"/>
+        <UsageCount Value="137"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -31,20 +32,20 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="75" Y="12"/>
-        <UsageCount Value="31"/>
+        <UsageCount Value="29"/>
       </Unit3>
       <Unit4>
         <Filename Value="../../../../FastPlaz/source/core/docs/README-new api project.txt"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="489"/>
-        <CursorPos X="48" Y="510"/>
-        <UsageCount Value="35"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="836"/>
+        <CursorPos Y="869"/>
+        <UsageCount Value="49"/>
         <Loaded Value="True"/>
       </Unit5>
       <Unit6>
@@ -52,20 +53,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="300"/>
         <CursorPos X="45" Y="338"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit6>
       <Unit7>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/config_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="60"/>
         <CursorPos X="29" Y="87"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit7>
       <Unit8>
         <Filename Value="../../SimpleAI/src/simpleai_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="99" Y="38"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="113"/>
+        <CursorPos X="21" Y="151"/>
+        <UsageCount Value="35"/>
       </Unit8>
       <Unit9>
         <Filename Value="/usr/local/share/fpcsrc/packages/fcl-web/src/base/fpweb.pp"/>
@@ -73,65 +75,65 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="105"/>
         <CursorPos Y="128"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit9>
       <Unit10>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/theme_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="7" Y="631"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="31"/>
+        <UsageCount Value="8"/>
       </Unit10>
       <Unit11>
         <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/fgl.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="8"/>
         <CursorPos X="11" Y="276"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit11>
       <Unit12>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/session_controller.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="3" Y="33"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit12>
       <Unit13>
         <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysinth.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="47"/>
         <CursorPos X="82" Y="76"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit13>
       <Unit14>
         <Filename Value="../../SimpleAI/src/simpleai_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="21"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../SimpleAI/src/intents_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="219"/>
         <CursorPos X="15" Y="244"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="21"/>
       </Unit15>
       <Unit16>
         <Filename Value="../../SimpleAI/src/entities_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="20"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="853"/>
-        <CursorPos Y="876"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="331"/>
+        <CursorPos Y="355"/>
+        <UsageCount Value="20"/>
       </Unit17>
       <Unit18>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/http_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="79"/>
-        <CursorPos X="17" Y="102"/>
+        <TopLine Value="60"/>
+        <CursorPos X="3" Y="83"/>
         <UsageCount Value="10"/>
       </Unit18>
       <Unit19>
@@ -139,59 +141,59 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="5" Y="25"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit19>
       <Unit20>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/redis_controller.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos X="3" Y="46"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit20>
       <Unit21>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/systems/info_controller.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="109" Y="26"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit21>
       <Unit22>
         <Filename Value="../../../../FastPlaz/source/core/tools/src/project_wzd.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit22>
       <Unit23>
         <Filename Value="../../../../FastPlaz/source/core/tools/src/projectapi_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="175"/>
         <CursorPos X="17" Y="213"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit23>
       <Unit24>
         <Filename Value="../../../../FastPlaz/source/core/tools/src/project_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="65"/>
         <CursorPos X="114" Y="75"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit24>
       <Unit25>
         <Filename Value="../../../../Stemming/source/stemming_web/controller/stemtest_controller.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="164" Y="6"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit25>
       <Unit26>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/stemmingnaziefredis_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos Y="72"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit26>
       <Unit27>
         <Filename Value="/usr/local/share/fpcsrc/packages/rtl-extra/src/unix/sockets.pp"/>
         <UnitName Value="Sockets"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="5" Y="20"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit27>
       <Unit28>
         <Filename Value="/usr/local/share/fpcsrc/packages/fcl-base/src/inifiles.pp"/>
@@ -199,7 +201,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="801"/>
         <CursorPos Y="748"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit28>
       <Unit29>
         <Filename Value="/usr/local/share/fpcsrc/packages/fcl-web/src/base/httpdefs.pp"/>
@@ -207,20 +209,20 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="536"/>
         <CursorPos X="3" Y="559"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit29>
       <Unit30>
         <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/sysutils/sysstrh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="195"/>
         <CursorPos X="10" Y="218"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit30>
       <Unit31>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/database_lib.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="19"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit31>
       <Unit32>
         <Filename Value="/usr/local/share/fpcsrc/packages/regexpr/src/regexpr.pas"/>
@@ -228,85 +230,83 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="587"/>
         <CursorPos X="10" Y="610"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit32>
       <Unit33>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/json_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="215"/>
         <CursorPos X="44" Y="255"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="9"/>
       </Unit33>
       <Unit34>
         <Filename Value="/usr/local/share/fpcsrc/packages/fcl-json/src/fpjson.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="550"/>
         <CursorPos X="10" Y="573"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit34>
       <Unit35>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/redis_lib.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="380"/>
         <CursorPos Y="399"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit35>
       <Unit36>
         <Filename Value="../../../../AI123/source/ai123/source/ai123/main.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="113"/>
         <CursorPos X="51" Y="78"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit36>
       <Unit37>
         <Filename Value="../../SimpleAI/src/suggestion_controller.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="11" Y="23"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit37>
       <Unit38>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/logutil_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="85"/>
-        <CursorPos Y="111"/>
-        <UsageCount Value="9"/>
+        <TopLine Value="84"/>
+        <CursorPos X="49" Y="110"/>
+        <UsageCount Value="11"/>
       </Unit38>
       <Unit39>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="321"/>
-        <CursorPos X="38" Y="363"/>
-        <UsageCount Value="11"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="325"/>
+        <CursorPos Y="363"/>
+        <UsageCount Value="10"/>
       </Unit39>
       <Unit40>
         <Filename Value="/usr/local/share/fpcsrc/packages/rtl-extra/src/darwin/unxsockh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="4" Y="20"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit40>
       <Unit41>
         <Filename Value="/usr/local/share/fpcsrc/rtl/objpas/classes/classesh.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="671"/>
-        <CursorPos X="14" Y="692"/>
-        <UsageCount Value="9"/>
+        <TopLine Value="702"/>
+        <CursorPos X="3" Y="726"/>
+        <UsageCount Value="10"/>
       </Unit41>
       <Unit42>
         <Filename Value="/usr/local/share/fpcsrc/packages/rtl-objpas/src/inc/dateutil.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="237"/>
         <CursorPos X="10" Y="260"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit42>
       <Unit43>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="437"/>
-        <CursorPos Y="466"/>
-        <UsageCount Value="15"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="118"/>
+        <CursorPos Y="137"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit43>
       <Unit44>
@@ -314,7 +314,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos X="136" Y="4"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit44>
       <Unit45>
@@ -322,171 +322,186 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="27" Y="88"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit45>
       <Unit46>
         <Filename Value="../../SimpleAI/src/controller/jadwalsholat_controller.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
         <CursorPos Y="108"/>
-        <UsageCount Value="16"/>
+        <UsageCount Value="14"/>
       </Unit46>
       <Unit47>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="56"/>
-        <CursorPos X="21" Y="61"/>
-        <UsageCount Value="17"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="45" Y="71"/>
+        <UsageCount Value="16"/>
       </Unit47>
       <Unit48>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/kbbi_integration.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="131" Y="8"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit48>
       <Unit49>
         <Filename Value="../../SimpleAI/src/controller/kamus_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="89" Y="18"/>
-        <UsageCount Value="9"/>
+        <TopLine Value="64"/>
+        <CursorPos X="48" Y="91"/>
+        <UsageCount Value="19"/>
       </Unit49>
       <Unit50>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/kamusibacor_integration.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <TopLine Value="27"/>
+        <UsageCount Value="8"/>
       </Unit50>
       <Unit51>
         <Filename Value="../../SimpleAI/src/controller/carik_controller.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="20"/>
-        <CursorPos X="47" Y="57"/>
-        <UsageCount Value="17"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="152"/>
+        <CursorPos Y="167"/>
+        <UsageCount Value="29"/>
       </Unit51>
+      <Unit52>
+        <Filename Value="/usr/local/share/fpcsrc/packages/fcl-net/src/netdb.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="817"/>
+        <CursorPos Y="864"/>
+        <UsageCount Value="8"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/kamuskemdikbud_integration.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="66" Y="32"/>
+        <UsageCount Value="19"/>
+      </Unit53>
     </Units>
     <OtherDefines Count="1">
       <Define0 Value="UseCThreads"/>
     </OtherDefines>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="54" Column="62" TopLine="26"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="130" Column="14" TopLine="93"/>
       </Position1>
       <Position2>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="76" Column="15" TopLine="58"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="838" Column="30" TopLine="806"/>
       </Position2>
       <Position3>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="349" TopLine="306"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="320" Column="44" TopLine="297"/>
       </Position3>
       <Position4>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="89" Column="23" TopLine="68"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
       </Position4>
       <Position5>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="327" Column="15" TopLine="305"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="122" Column="31" TopLine="84"/>
       </Position5>
       <Position6>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="89" Column="34" TopLine="68"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="320" Column="44" TopLine="282"/>
       </Position6>
       <Position7>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="322" Column="62" TopLine="277"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="639" Column="58" TopLine="614"/>
       </Position7>
       <Position8>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="91" Column="54" TopLine="69"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="186" TopLine="165"/>
       </Position8>
       <Position9>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="36" Column="23" TopLine="9"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="169" Column="15" TopLine="149"/>
       </Position9>
       <Position10>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="340" Column="13" TopLine="315"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="187" Column="5" TopLine="173"/>
       </Position10>
       <Position11>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="208" TopLine="185"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="195" Column="19" TopLine="167"/>
       </Position11>
       <Position12>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="331" Column="6" TopLine="306"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="190" Column="36" TopLine="165"/>
       </Position12>
       <Position13>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/common.pas"/>
-        <Caret Line="569" Column="69" TopLine="543"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="872" TopLine="831"/>
       </Position13>
       <Position14>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="326" TopLine="303"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="194" Column="38" TopLine="170"/>
       </Position14>
       <Position15>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="339" Column="15" TopLine="294"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="84" Column="17" TopLine="77"/>
       </Position15>
       <Position16>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="211" TopLine="182"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="226" TopLine="222"/>
       </Position16>
       <Position17>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="339" TopLine="306"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="91" Column="38" TopLine="83"/>
       </Position17>
       <Position18>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="220" TopLine="201"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="229" Column="51" TopLine="207"/>
       </Position18>
       <Position19>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="212" Column="37" TopLine="187"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="448" Column="48" TopLine="410"/>
       </Position19>
       <Position20>
-        <Filename Value="../../SimpleAI/src/controller/carik_controller.pas"/>
-        <Caret Line="283" Column="40" TopLine="252"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="226" TopLine="211"/>
       </Position20>
       <Position21>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="210" TopLine="184"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="108" Column="14" TopLine="86"/>
       </Position21>
       <Position22>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="36" Column="27" TopLine="11"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="190" Column="9" TopLine="170"/>
       </Position22>
       <Position23>
         <Filename Value="main.pas"/>
-        <Caret Line="157" Column="17" TopLine="150"/>
+        <Caret Line="166" Column="19" TopLine="159"/>
       </Position23>
       <Position24>
         <Filename Value="main.pas"/>
+        <Caret Line="170" Column="16" TopLine="159"/>
       </Position24>
       <Position25>
         <Filename Value="main.pas"/>
-        <Caret Line="10" Column="28"/>
+        <Caret Line="204" Column="36" TopLine="167"/>
       </Position25>
       <Position26>
         <Filename Value="main.pas"/>
-        <Caret Line="130" TopLine="92"/>
+        <Caret Line="76" Column="19" TopLine="53"/>
       </Position26>
       <Position27>
         <Filename Value="main.pas"/>
+        <Caret Line="170" Column="16" TopLine="133"/>
       </Position27>
       <Position28>
         <Filename Value="main.pas"/>
-        <Caret Line="129" Column="21" TopLine="92"/>
+        <Caret Line="204" Column="36" TopLine="167"/>
       </Position28>
       <Position29>
-        <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
-        <Caret Line="61" Column="21" TopLine="56"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="76" Column="31" TopLine="68"/>
       </Position29>
       <Position30>
-        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/whois_integration.pas"/>
-        <Caret Line="93" Column="14" TopLine="72"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="173" Column="22" TopLine="152"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

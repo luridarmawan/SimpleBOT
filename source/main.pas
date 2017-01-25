@@ -168,7 +168,7 @@ begin
   SimpleBOT.Handler['carik_start'] := @Carik.CarikStartHandler;
   SimpleBOT.Handler['carik_stop'] := @Carik.CarikStopHandler;
   text_response := SimpleBOT.Exec(Text);
-  SimpleBOT.Free;
+  Response.Content := text_response;
 
   // Send To Telegram
   // add paramater 'telegram=1' to your telegram url
@@ -179,27 +179,29 @@ begin
       messageID := '';
     if SimpleBOT.SimpleAI.Action = 'telegram_menu' then
       messageID := '';
-    SimpleBOT.SimpleAI.ResponseText.Add('');
     for j := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
       //if i > 0 then
       //  messageID := '';
       try
         s := SimpleBOT.SimpleAI.ResponseText[j];
+        LogUtil.Add( 'msg: ' + s, 'telo');
         if s <> '' then
+        begin
           SimpleBOT.TelegramSend(telegramToken, chatID, messageID, s);
-        Delay(200);
+        end;
+        //Delay(200);
       except
       end;
     end;
 
-    Response.Content := 'OK';
+    Response.Content := '{}';
     //Exit;
   end;
 
   //---
+  SimpleBOT.Free;
   Response.ContentType := 'application/json';
-  Response.Content := text_response;
 end;
 
 function TMainModule.defineHandler(const IntentName: string; Params: TStrings): string;
