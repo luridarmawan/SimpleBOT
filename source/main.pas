@@ -181,8 +181,8 @@ begin
       messageID := '';
     for j := 0 to SimpleBOT.SimpleAI.ResponseText.Count - 1 do
     begin
-      //if i > 0 then
-      //  messageID := '';
+      if i > 0 then
+        messageID := '';
       try
         s := SimpleBOT.SimpleAI.ResponseText[j];
         if s <> '' then

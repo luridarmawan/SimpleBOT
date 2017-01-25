@@ -51,6 +51,12 @@
   "carik": {
     "path": "files/carik/",
     "groups" : {
+      "PascalIndonesia" : {
+        "admin": "luridarmawan,paklebah,tigor"
+      },
+      "PaUd-PascalUnderware-" : {
+        "admin": "luridarmawan,paklebah,tigor"
+      },
       "SuperGroupTest" : {
         "admin": "luridarmawan,seseorang"
       },

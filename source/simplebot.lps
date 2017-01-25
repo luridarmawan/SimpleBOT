@@ -9,22 +9,21 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="54" Y="25"/>
-        <UsageCount Value="137"/>
+        <UsageCount Value="139"/>
       </Unit0>
       <Unit1>
         <Filename Value="routes.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="16"/>
-        <UsageCount Value="137"/>
+        <UsageCount Value="139"/>
       </Unit1>
       <Unit2>
         <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="146"/>
-        <CursorPos X="45" Y="169"/>
-        <UsageCount Value="137"/>
+        <TopLine Value="169"/>
+        <CursorPos X="7" Y="185"/>
+        <UsageCount Value="139"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -43,8 +42,8 @@
       <Unit5>
         <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="833"/>
-        <CursorPos X="3" Y="858"/>
+        <TopLine Value="837"/>
+        <CursorPos X="8" Y="866"/>
         <UsageCount Value="49"/>
         <Loaded Value="True"/>
       </Unit5>
@@ -269,8 +268,7 @@
       <Unit38>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/library/logutil_lib.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="85"/>
-        <CursorPos Y="115"/>
+        <CursorPos X="3" Y="16"/>
         <UsageCount Value="11"/>
       </Unit38>
       <Unit39>
@@ -303,10 +301,11 @@
       </Unit42>
       <Unit43>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="118"/>
-        <CursorPos Y="137"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="442"/>
+        <CursorPos X="20" Y="465"/>
         <UsageCount Value="14"/>
+        <Loaded Value="True"/>
       </Unit43>
       <Unit44>
         <Filename Value="../../../../AI123/source/ai123/public_html/config/config.json"/>
@@ -333,8 +332,8 @@
       <Unit47>
         <Filename Value="../../SimpleAI/src/controller/domainwhois_controller.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="40"/>
-        <CursorPos X="45" Y="71"/>
+        <TopLine Value="53"/>
+        <CursorPos Y="77"/>
         <UsageCount Value="16"/>
       </Unit47>
       <Unit48>
@@ -346,11 +345,10 @@
       </Unit48>
       <Unit49>
         <Filename Value="../../SimpleAI/src/controller/kamus_controller.pas"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="64"/>
-        <CursorPos X="21" Y="92"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="14" Y="98"/>
         <UsageCount Value="19"/>
-        <Loaded Value="True"/>
       </Unit49>
       <Unit50>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/kamusibacor_integration.pas"/>
@@ -360,9 +358,10 @@
       </Unit50>
       <Unit51>
         <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="39"/>
-        <CursorPos X="14" Y="63"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="316"/>
+        <CursorPos X="28" Y="353"/>
         <UsageCount Value="29"/>
         <Loaded Value="True"/>
       </Unit51>
@@ -375,11 +374,10 @@
       </Unit52>
       <Unit53>
         <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/kamuskemdikbud_integration.pas"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="54"/>
-        <CursorPos X="66" Y="32"/>
+        <CursorPos Y="65"/>
         <UsageCount Value="19"/>
-        <Loaded Value="True"/>
       </Unit53>
     </Units>
     <OtherDefines Count="1">
@@ -388,122 +386,121 @@
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="76" Column="31" TopLine="68"/>
+        <Caret Line="113" Column="10" TopLine="76"/>
       </Position1>
       <Position2>
         <Filename Value="main.pas"/>
-        <Caret Line="173" Column="22" TopLine="152"/>
+        <Caret Line="120" Column="15" TopLine="83"/>
       </Position2>
       <Position3>
         <Filename Value="main.pas"/>
-        <Caret Line="188" Column="44" TopLine="164"/>
+        <Caret Line="122" Column="14" TopLine="85"/>
       </Position3>
       <Position4>
-        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
-        <Caret Line="169" Column="15" TopLine="149"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="125" Column="16" TopLine="88"/>
       </Position4>
       <Position5>
         <Filename Value="main.pas"/>
-        <Caret Line="188" TopLine="164"/>
+        <Caret Line="168" Column="27" TopLine="131"/>
       </Position5>
       <Position6>
         <Filename Value="main.pas"/>
-        <Caret Line="188" TopLine="164"/>
+        <Caret Line="169" Column="45" TopLine="169"/>
       </Position6>
       <Position7>
-        <Filename Value="main.pas"/>
-        <Caret Line="32" Column="30" TopLine="10"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="169" Column="15" TopLine="148"/>
       </Position7>
       <Position8>
-        <Filename Value="main.pas"/>
-        <Caret Line="51" Column="30" TopLine="28"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="863" Column="102" TopLine="835"/>
       </Position8>
       <Position9>
-        <Filename Value="main.pas"/>
-        <Caret Line="32" Column="30" TopLine="24"/>
+        <Filename Value="../../SimpleAI/src/simplebot_controller.pas"/>
+        <Caret Line="100" TopLine="72"/>
       </Position9>
       <Position10>
-        <Filename Value="main.pas"/>
-        <Caret Line="51" Column="30" TopLine="23"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="137" TopLine="118"/>
       </Position10>
       <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="33" Column="31" TopLine="24"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="239" Column="51" TopLine="216"/>
       </Position11>
       <Position12>
-        <Filename Value="main.pas"/>
-        <Caret Line="51" Column="8" TopLine="23"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="328" TopLine="301"/>
       </Position12>
       <Position13>
-        <Filename Value="main.pas"/>
-        <Caret Line="56" Column="8" TopLine="23"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="36" Column="54" TopLine="9"/>
       </Position13>
       <Position14>
-        <Filename Value="main.pas"/>
-        <Caret Line="122" Column="54" TopLine="90"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="174" Column="31" TopLine="135"/>
       </Position14>
       <Position15>
-        <Filename Value="main.pas"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="105" Column="14" TopLine="83"/>
       </Position15>
       <Position16>
-        <Filename Value="main.pas"/>
-        <Caret Line="32" Column="10"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="62" Column="43" TopLine="32"/>
       </Position16>
       <Position17>
-        <Filename Value="main.pas"/>
-        <Caret Line="26" Column="53" TopLine="13"/>
+        <Filename Value="../../../../FastPlaz/source/core/FastPlaz/src/integration/telegram_integration.pas"/>
+        <Caret Line="465" Column="29" TopLine="442"/>
       </Position17>
       <Position18>
-        <Filename Value="main.pas"/>
-        <Caret Line="32" Column="10" TopLine="13"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="164" Column="72" TopLine="136"/>
       </Position18>
       <Position19>
-        <Filename Value="main.pas"/>
-        <Caret Line="51" Column="8" TopLine="13"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="266" Column="8" TopLine="100"/>
       </Position19>
       <Position20>
-        <Filename Value="main.pas"/>
-        <Caret Line="56" Column="8" TopLine="18"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
       </Position20>
       <Position21>
-        <Filename Value="main.pas"/>
-        <Caret Line="110" Column="11" TopLine="72"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="43" Column="26"/>
       </Position21>
       <Position22>
-        <Filename Value="main.pas"/>
-        <Caret Line="111" Column="8" TopLine="73"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="164" Column="28" TopLine="126"/>
       </Position22>
       <Position23>
-        <Filename Value="main.pas"/>
-        <Caret Line="113" Column="10" TopLine="76"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="202" Column="18" TopLine="164"/>
       </Position23>
       <Position24>
-        <Filename Value="main.pas"/>
-        <Caret Line="120" Column="15" TopLine="83"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="86" Column="40" TopLine="62"/>
       </Position24>
       <Position25>
-        <Filename Value="main.pas"/>
-        <Caret Line="122" Column="14" TopLine="85"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="216" TopLine="200"/>
       </Position25>
       <Position26>
-        <Filename Value="main.pas"/>
-        <Caret Line="125" Column="16" TopLine="88"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
+        <Caret Line="274" Column="30" TopLine="240"/>
       </Position26>
       <Position27>
         <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
-        <Caret Line="20" Column="4"/>
+        <Caret Line="332" Column="43" TopLine="318"/>
       </Position27>
       <Position28>
         <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
-        <Caret Line="18" Column="4"/>
+        <Caret Line="297" Column="80" TopLine="261"/>
       </Position28>
       <Position29>
         <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
-        <Caret Line="187" TopLine="164"/>
+        <Caret Line="82" Column="3" TopLine="73"/>
       </Position29>
       <Position30>
-        <Filename Value="main.pas"/>
-        <Caret Line="168" Column="27" TopLine="131"/>
+        <Filename Value="../../SimpleAI/src/controller/notulen_controller.pas"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>
