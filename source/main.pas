@@ -185,7 +185,6 @@ begin
       //  messageID := '';
       try
         s := SimpleBOT.SimpleAI.ResponseText[j];
-        LogUtil.Add( 'msg: ' + s, 'telo');
         if s <> '' then
         begin
           SimpleBOT.TelegramSend(telegramToken, chatID, messageID, s);
@@ -195,7 +194,7 @@ begin
       end;
     end;
 
-    Response.Content := '{}';
+    //Response.Content := '{}';
     //Exit;
   end;
 
