@@ -165,8 +165,8 @@ begin
   end;
   SimpleBOT.OnError := @OnErrorHandler;  // Your Custom Message
   SimpleBOT.Handler['define'] := @defineHandler;
-  SimpleBOT.Handler['carik_start'] := @Carik.CarikStartHandler;
-  SimpleBOT.Handler['carik_stop'] := @Carik.CarikStopHandler;
+  SimpleBOT.Handler['carik_start'] := @Carik.StartHandler;
+  SimpleBOT.Handler['carik_stop'] := @Carik.StopHandler;
   text_response := SimpleBOT.Exec(Text);
   Response.Content := text_response;
 
