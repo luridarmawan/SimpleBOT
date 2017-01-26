@@ -155,6 +155,16 @@ begin
   if Text = '' then
     Exit;
 
+  // remove mention from text
+  Text := LowerCase(Text);
+  if Pos('@' + BOTNAME_DEFAULT, Text) = 1 then
+    Text := StringReplace(Text, '@' + BOTNAME_DEFAULT, '', [rfReplaceAll, rfIgnoreCase]);
+  s := '@' + Config[_AI_CONFIG_NAME] + 'bot';
+  s := LowerCase( s);
+  if Pos(s, Text) = 1 then
+    Text := StringReplace(Text, s, '', [rfReplaceAll, rfIgnoreCase]);
+  Text := Trim(Text);
+
   // Main AI BOT
   SimpleBOT := TSimpleBotModule.Create;
   SimpleBOT.chatID := chatID;
@@ -187,6 +197,9 @@ begin
         s := SimpleBOT.SimpleAI.ResponseText[j];
         if s <> '' then
         begin
+          if isTelegramGroup then;
+            if j = 0 then
+              s := fullName + ', ' + s;
           SimpleBOT.TelegramSend(telegramToken, chatID, messageID, s);
         end;
         //Delay(200);

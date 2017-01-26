@@ -1383,10 +1383,6 @@
 		"whois-fe1.gmx.tango.knipp.de",
 		"% no matching objects found"
 	],
-	"go.id": [
-		"whois.idnic.net.id",
-		"Not found"
-	],
 	"go.jp": [
 		"whois.nic.ad.jp",
 		"No match!!"
@@ -1660,6 +1656,30 @@
 		"No Data Found"
 	],
 	"id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"co.id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"go.id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"mil.id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"net.id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"or.id": [
+		"whois.pandi.or.id",
+		"DOMAIN NOT FOUND"
+	],
+	"web.id": [
 		"whois.pandi.or.id",
 		"DOMAIN NOT FOUND"
 	],
@@ -2146,10 +2166,6 @@
 	"mil.gt": [
 		"http:\/\/www.gt\/cgi-bin\/whois.cgi?domain=",
 		"DOMINIO NO REGISTRADO"
-	],
-	"mil.id": [
-		"whois.idnic.net.id",
-		"Not found"
 	],
 	"mil.pl": [
 		"whois.dns.pl",

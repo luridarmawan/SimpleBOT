@@ -5,7 +5,7 @@
     "baseurl": "",
     "admin_email": "webmaster@coba.com",
     "development": true,
-    "debug": true,
+    "debug": false,
     "module_default": "main",
     "language_default": "id",
     "theme_enable": false,
@@ -18,7 +18,7 @@
   },
   "ai": {
     "default": {
-      "name": "JarWo",
+      "name": "Carik",
       "datasource": "file",
       "debug": false,
       "basedir": "files/ai/",
@@ -51,11 +51,20 @@
   "carik": {
     "path": "files/carik/",
     "groups" : {
+      "PHPIndonesiaforStudent" : {
+        "admin": "luridarmawan,rajareog,peterjkambey"
+      },
       "PascalIndonesia" : {
         "admin": "luridarmawan,paklebah,tigor"
       },
       "PaUd-PascalUnderware-" : {
         "admin": "luridarmawan,paklebah,tigor"
+      },
+      "CafeStartup140315" : {
+        "admin": "luridarmawan,wirohardy,bontotpandawa"
+      },
+      "TanyaBisnis-ukmid" : {
+        "admin": "luridarmawan,sistemukm"
       },
       "SuperGroupTest" : {
         "admin": "luridarmawan,seseorang"
