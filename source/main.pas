@@ -6,7 +6,7 @@ interface
 
 //TODO: Recorder
 uses
-  notulen_controller,
+  notulen_controller, resiibacor_integration,
   simplebot_controller, logutil_lib, fpjson,
   Crt,
   Classes, SysUtils, fpcgi, HTTPDefs, fastplaz_handler, database_lib;
@@ -23,6 +23,7 @@ type
     jsonData: TJSONData;
     procedure BeforeRequestHandler(Sender: TObject; ARequest: TRequest);
     function defineHandler(const IntentName: string; Params: TStrings): string;
+    function resiHandler(const IntentName: string; Params: TStrings): string;
 
     function isTelegram: boolean;
     function isTelegramGroup: boolean;
@@ -160,7 +161,7 @@ begin
   if Pos('@' + BOTNAME_DEFAULT, Text) = 1 then
     Text := StringReplace(Text, '@' + BOTNAME_DEFAULT, '', [rfReplaceAll, rfIgnoreCase]);
   s := '@' + Config[_AI_CONFIG_NAME] + 'bot';
-  s := LowerCase( s);
+  s := LowerCase(s);
   if Pos(s, Text) = 1 then
     Text := StringReplace(Text, s, '', [rfReplaceAll, rfIgnoreCase]);
   Text := Trim(Text);
@@ -177,6 +178,7 @@ begin
   SimpleBOT.Handler['define'] := @defineHandler;
   SimpleBOT.Handler['carik_start'] := @Carik.StartHandler;
   SimpleBOT.Handler['carik_stop'] := @Carik.StopHandler;
+  SimpleBOT.Handler['resi_paket'] := @resiHandler;
   text_response := SimpleBOT.Exec(Text);
   Response.Content := text_response;
 
@@ -245,6 +247,20 @@ begin
   // Save to database
   //   keyName & keyValue
 
+end;
+
+function TMainModule.resiHandler(const IntentName: string; Params: TStrings): string;
+begin
+  with TResiIbacorController.Create do
+  begin
+    Token := Config['ibacor/token'];
+    Vendor := Params.Values['vendor_value'];
+    AirwayBill := Params.Values['nomor_value'];
+    Result := Find();
+    Free;
+  end;
+  if Result = '' then
+    Result := 'Maaf, gagal mencari kode pengiriman ini.';
 end;
 
 function TMainModule.isTelegram: boolean;

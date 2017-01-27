@@ -317,6 +317,11 @@ say=Saya usahkan
 say=Baiklah
 say=mmmm... duhh.. saya usahakan yaa...
 
+[ResiPaket]
+say=Mohon ditunggu, saya cari dahulu ..
+say=Tunggu sebentar ..
+say=bentar, saya cek dulu
+
 [xxx]
 say=xxxxxx
 

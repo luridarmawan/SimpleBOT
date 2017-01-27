@@ -42,6 +42,10 @@ say=capek (ahh|deh)
 action=telegram_menu
 say=/start
 
+[ResiPaket]
+action=resi_paket
+say=resi @vendor @nomor
+
 [Kamus]
 action=kamus
 object=kamus
