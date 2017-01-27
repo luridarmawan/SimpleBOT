@@ -68,14 +68,14 @@ say=(suggest|saran|teach) @answer: @question
 [CarikStart]
 action=carik_start
 say=mulai (catat|catet)
-say=(rekam|catat|catet|mulai|start) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen)
-say=(kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen) (mulai|dimulai|start|dicatat|dicatet)
-say=(mulai|start) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen)
+say=(rekam|catat|catet|mulai|start) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen|nyatet)
+say=(kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen|nyatet) (mulai|dimulai|start|dicatat|dicatet)
+say=(mulai|start) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen|nyatet)
 
 [CarikStop]
 action=carik_stop
-say=(kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen) (dihentikan|stop|berhenti)
-say=(dihentikan|stop|berhenti|hentikan) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen)
+say=(kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen|nyatet) (dihentikan|stop|berhenti)
+say=(dihentikan|stop|berhenti|hentikan) (kulwap|obrolan|diskusi|rapat|rekaman|rekam|catatan|catat|notulen|nyatet)
 
 [CarikSend]
 action=carik_send

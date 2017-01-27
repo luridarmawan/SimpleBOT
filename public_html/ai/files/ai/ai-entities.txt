@@ -36,7 +36,7 @@ sex=kentu|ngentot|ml|sex|homo|lesbian|lesbi
 
 [Keadaan]
 baik=baik|sehat|alhamdulillah|kuat|semangat|sembuh
-buruk=buruk|sakit|demam|capek|lelah|sepi|pusing
+buruk=buruk|sakit|demam|capek|lelah|sepi|pusing|pusing2|mual|mual2
 
 
 [Pasangan]
