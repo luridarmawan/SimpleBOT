@@ -299,6 +299,15 @@ say=@range @Waktu:-waktu @Tanya:apa
 say=@Waktu:-waktu @Tanya:berapa
 say=@Waktu:-waktu @Tanya:apa
 
+[CantikGanteng]
+boundary=false
+say=@apapun @Kencantikan ya
+say=@apapun @Kencantikan ga
+say=@apapun @Kencantikan gak
+
+[YangPaling]
+say=yang paling @apapun
+say=paling @apapun
 
 [TanyaTentangTokoh]
 say=@Sapaan:kamu @PersonalKnowledge @apapun @Figure

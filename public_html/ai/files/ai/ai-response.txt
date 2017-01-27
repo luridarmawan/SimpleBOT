@@ -105,6 +105,23 @@ say=Hhhmm... agak sulit juga menjawabnya...
 [TokohSiapa]
 say=sepertinya dia %Figure%
 
+[CantikGanteng]
+say=kurang tau juga
+say=sulit memperkirakannya
+say=mesti dipikir-pikir dulu
+say=saya kurang yakin
+say=entahlah ...
+
+[YangPaling]
+say=kurang tau juga
+say=mungkin Anda?
+say=jangan-jangan Anda?
+say=aku dong yang paling cuakeppp... muachhh 💋
+say=sulit memperkirakannya
+say=mesti dipikir-pikir dulu
+say=yang pasti bukan saya
+say=sepertinya bukan Anda
+
 [TanyaTentangTokoh]
 say=Sepertinya tokoh terkenal
 say=Terdengar familiar

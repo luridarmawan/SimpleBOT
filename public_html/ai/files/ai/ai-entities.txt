@@ -155,7 +155,7 @@ tidak=benci|jijay|ga suka|ga seneng
 baik=suka|demen|seneng|kesengsem|trisna|love
 
 [Ekspresi]
-baik=haha|hehe|hihi|hoho|wkwk|muachhh
+baik=haha|hehe|hihi|hoho|wkwk|muachhh|muatih
 kaget=eehh|ehh|wow
 
 [Keraguan]
